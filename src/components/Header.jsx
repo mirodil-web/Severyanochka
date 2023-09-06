@@ -21,7 +21,7 @@ const Header = () => {
 
                 {/* header logo */}
                 <a href="#">
-                    <img src={Logo} alt="logo img" />
+                    <img width={152} height={32} src={Logo} alt="logo img" />
                 </a>
 
                 {/* katalog block  div */}
@@ -53,11 +53,11 @@ const Header = () => {
                     </button>
                 </div>
 
-                    <button className='flex items-center'>
-                        <img className='mr-2.5' src={Avatar} alt="User img" />
-                        <span className='mr-2.5'> Алексей</span>
-                         <img src={Button} alt="Button img" />
-                    </button>
+                <button className='flex items-center'>
+                    <img width={40} height={40} className='mr-2.5' src={Avatar} alt="User img" />
+                    <span className='mr-2.5'> Алексей</span>
+                    <img width={40} height={40} src={Button} alt="Button img" />
+                </button>
 
             </div>
         </header>

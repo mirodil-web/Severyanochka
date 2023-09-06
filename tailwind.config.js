@@ -11,7 +11,9 @@ export default {
       },
       colors: {
         'Yashil': '#70C05B',
-        'qorag': '#414141'
+        'qorag': '#414141',
+        'olov': '#f63',
+        'pinkx': '#FCD5BA'
       },
       borderRadius: {
         'nor': '4px',
