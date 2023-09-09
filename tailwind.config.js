@@ -22,8 +22,11 @@ export default {
         'besh': '375px'
       },
       backgroundImage: {
-        'herobg': "url('/public/assets/herobg.png')"
-      }
+        'herobg': "url('/public/assets/herobg.png')",
+        'footerbg': "url('/public/assets/footer-bg.png')"
+
+      },
+      
     },
   },
   plugins: [],
