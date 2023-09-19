@@ -20,7 +20,7 @@ const Ctati = () => {
                 </div>
 
                 <ul className='grid grid-cols-3 gap-10'>
-                    <li className='shadow-2xl shadow-pinkx/90 rounded-nor'>
+                    <li className='shadow-2xl hover:shadow-pinkx/90 rounded-nor'>
                         <img className='w-full rounded-nor' src={odam} alt="Inson" />
                         <div className='p-2.5'>
                             <span className='text-xs font-normal text-[#8f8f8f]'>05.03.2021</span>
@@ -30,7 +30,7 @@ const Ctati = () => {
                         </div>
                     </li>
 
-                    <li className='shadow-2xl shadow-pinkx/90 rounded-nor '>
+                    <li className='shadow-2xl hover:shadow-pinkx/90 rounded-nor '>
                         <img className='w-full rounded-nor' src={bahor} alt="Inson" />
                         <div className='p-2.5'>
                             <span className='text-xs font-normal text-[#8f8f8f]'>05.03.2021</span>
@@ -43,7 +43,7 @@ const Ctati = () => {
                         </div>
                     </li>
 
-                    <li className='shadow-2xl shadow-pinkx/90 rounded-nor'>
+                    <li className='shadow-2xl hover:shadow-pinkx/90 rounded-nor'>
                         <img className='w-full rounded-nor' src={food} alt="Inson" />
                         <div className='p-2.5'>
                             <span className='text-xs font-normal text-[#8f8f8f]'>22.02.2020</span>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../language/language'
 import Logo from '../../public/assets/logox.svg'
 import LogoIns from '../../public/assets/instagram.svg'
@@ -26,19 +27,19 @@ const Footer = () => {
                 <nav>
                     <ul className='flex space-x-10 text-xs'>
                         <li>
-                            <a href="#"> О компании</a>
+                            <Link className='hover:text-[#f63]' to='/about'> О компании</Link>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <Link className='hover:text-[#f63]' to='/'>Контакты</Link>
                         </li>
                         <li>
-                            <a href="#">Вакансии</a>
+                            <Link className='hover:text-[#f63]' to="/vakansi">Вакансии</Link>
                         </li>
                         <li>
-                            <a href="#">Статьи</a>
+                            <Link className='hover:text-[#f63]' to='/'>Статьи</Link>
                         </li>
                         <li>
-                            <a href="#">Политика обработки персональных данных</a>
+                            <Link className='hover:text-[#f63]' to='/'>Политика обработки персональных данных</Link>
                         </li>
                     </ul>
                 </nav>
@@ -47,28 +48,28 @@ const Footer = () => {
                 <div className='flex items-start'>
                     <ul className='flex items-center space-x-4 mr-10'>
                         <li>
-                            <a href="https://www.instagram.com/tolamirzayev_077/">
+                            <a target='_blank' href="https://www.instagram.com/tolamirzayev_077/">
                                 <img src={LogoIns} alt="Instagram logo" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://m.vk.com/">
+                            <a target='_blank' href="https://m.vk.com/">
                                 <img src={LogoWk} alt="wk logo" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/profile.php?id=100089886710192">
+                            <a target='_blank' href="https://www.facebook.com/profile.php?id=100089886710192">
                                 <img src={LogoFacke} alt="Fackebok logo" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/tolamirzayev_077/">
+                            <a target='_blank' href="https://www.instagram.com/tolamirzayev_077/">
                                 <img src={LogoOk} alt="Ok logo" />
                             </a>
                         </li>
                     </ul>
 
-                    <address className='flex flex-col '>
+                    <address className='font-normal not-italic flex flex-col '>
 
                         <div className='flex items-center mb-7'>
                             <img className='mr-2' src={Telephone} alt="Phone" />
@@ -81,6 +82,7 @@ const Footer = () => {
                         </div>
                     </address>
                 </div>
+
             </div>
         </footer>
     )
