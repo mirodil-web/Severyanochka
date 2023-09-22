@@ -12,9 +12,9 @@ const Katalog = () => {
           Главная
         </Link>
 
-        <Link className='mr-4 text-xs hover:text-yellow-600' to='/about'>
+        <span className=' text-xs ' >
           О компании
-        </Link>
+        </span>
       </Breadcrumbs>
 
       </div>

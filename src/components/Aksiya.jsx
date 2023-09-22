@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CardImg1 from "../../public/assets/card-img1.png";
 import Heart from "../../public/assets/heart.png";
 import Milk from "../../public/assets/milk.png";
@@ -16,6 +16,13 @@ import 'swiper/css';
 
 
 const Aksiya = () => {
+
+    const [badge, setBadge] = useState()
+    
+    const qoshish = () => {
+        
+    }
+
     return (
         <section className='pt-20 pb-14'>
             <div className="container">
@@ -45,7 +52,7 @@ const Aksiya = () => {
                     {/* Card 1 */}
                     <SwiperSlide className='bg-white shadow-md relative'>
                         <div className='p-2 relative'>
-                            <button className='absolute right-2 bg-slate-200/50 p-2
+                            <button  className='absolute right-2 bg-red-700/50 p-2
                              rounded-nor'>
                                 <img width={22} height={22} src={Heart} alt="Heart icon" />
                             </button>

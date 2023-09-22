@@ -37,7 +37,7 @@ const Novinki = () => {
                 >
 
                     {/* Card 1 */}
-                    <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                    <SwiperSlide className='bg-white shadow-md rounded-nor '>
                         <div className='relative'>
                             <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -66,7 +66,7 @@ const Novinki = () => {
                     </SwiperSlide>
 
                     {/* Card 2 */}
-                    <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                    <SwiperSlide className='bg-white shadow-md rounded-nor '>
                         <div className='relative'>
                             <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -95,7 +95,7 @@ const Novinki = () => {
                     </SwiperSlide>
 
                     {/* Card 3 */}
-                    <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                    <SwiperSlide className='bg-white shadow-md rounded-nor '>
                         <div className='relative'>
                             <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -124,7 +124,7 @@ const Novinki = () => {
                     </SwiperSlide>
 
                     {/* Card 4 */}
-                    <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                    <SwiperSlide className='bg-white shadow-md rounded-nor '>
                         <div className='relative'>
                             <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -152,7 +152,7 @@ const Novinki = () => {
                     </SwiperSlide>
 
                     {/* Card 5 */}
-                    <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                    <SwiperSlide className='bg-white shadow-md rounded-nor '>
                         <div className='relative'>
                             <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -181,7 +181,7 @@ const Novinki = () => {
                     </SwiperSlide>
 
                     {/* Card 6 */}
-                    <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                    <SwiperSlide className='bg-white shadow-md rounded-nor '>
                         <div className='relative'>
                             <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -210,7 +210,7 @@ const Novinki = () => {
                     </SwiperSlide>
 
                     {/* Card 7 */}
-                    <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                    <SwiperSlide className='bg-white shadow-md rounded-nor '>
                         <div className='relative'>
                             <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -239,7 +239,7 @@ const Novinki = () => {
                     </SwiperSlide>
 
                     {/* Card 8 */}
-                    <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                    <SwiperSlide className='bg-white shadow-md rounded-nor '>
                         <div className='relative'>
                             <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>

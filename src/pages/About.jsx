@@ -3,27 +3,27 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Odamlar from '../../public/assets/Vector.png'
 import Group from '../../public/assets/GroupDev.png'
-import Logo from '../../public/assets/logox.svg'
+import Logo from '../../public/assets/logoG.png'
 
 
 const About = () => {
   return (
-      <section className='pb-20'>
+      <section className=''>
           <div className="container">
               <Breadcrumbs className='space-x-4 py-6'>
                   <Link className='mr-4 text-xs hover:text-yellow-600' to='/'>
                       Главная
                   </Link>
                   
-                  <Link className='mr-4 text-xs hover:text-yellow-600' to='/about'>
+                  <span className='mr-4 text-xs ' >
                       О компании
-                  </Link>
+                  </span>
               </Breadcrumbs>
 
               <div className='p-8 relative flex pt-10 pb-16'>
                   <div className='max-w-[669px] w-full'>
                       <h2 className='text-6xl font-bold font-Rubik text-qorag mb-4'>О компании</h2>
-                      <p className='text-2xl font-bold  text-[#f63]'>Мы непрерывно развиваемся <br /> иработаем над совершенствованием сервиса, <br /> заботимся о наших клиентах, <br /> стремимся к лучшему будущему.</p>
+                      <p className='text-2xl font-bold  text-[#f63]'>Мы непрерывно развиваемся <br /> иработаем над совершенствованием сервиса, заботимся о наших клиентах, <br /> стремимся к лучшему будущему.</p>
                   </div>
 
                   <img width={669} height={341} className='  right-0 top-0' src={Odamlar} alt="Odamlar" />
@@ -32,7 +32,7 @@ const About = () => {
                   
               </div>
 
-              <ul className='flex justify-between'>
+              <ul className='flex justify-between py-14'>
                   <li className=''>
                           <p className='text-xl font-normal mb-4'>Мы занимаемся <br /> розничной торговлей</p>
                           <h3 className="font-bold text-2xl">Более 20 лет.</h3>
@@ -47,8 +47,12 @@ const About = () => {
                   </li>
               </ul>
 
-              <div>
-                  <img src={Logo} alt="Logo" />
+              <div className='py-14  flex items-center justify-around'>
+                  <img width={127} height={103} src={Logo} alt="Logo" />
+
+                  <div className='py-7 px-10 rounded-nor bg-[#E5FFDE]'> 
+                      <h2 className='text-[#70C05B] text-2xl font-bold'> Спасибо за то, что вы с нами. Северяночка, везет всегда!</h2>
+                  </div>
               </div>
           </div>
     </section>

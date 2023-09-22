@@ -24,7 +24,7 @@ const Ranshe = () => {
                     </div>
 
                     {/* Card wrapper */}
-                    <Swiper className=' '
+                    <Swiper className=' py-10'
                         spaceBetween={40}
                         slidesPerView={4}
                         autoplay={{
@@ -38,7 +38,7 @@ const Ranshe = () => {
                     >
 
                         {/* Card 1 */}
-                        <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                        <SwiperSlide className='bg-white shadow-md rounded-nor '>
                             <div className='relative'>
                                 <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -67,7 +67,7 @@ const Ranshe = () => {
                         </SwiperSlide>
 
                         {/* Card 2 */}
-                        <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                        <SwiperSlide className='bg-white shadow-md rounded-nor '>
                             <div className='relative'>
                                 <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -96,7 +96,7 @@ const Ranshe = () => {
                         </SwiperSlide>
 
                         {/* Card 3 */}
-                        <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                        <SwiperSlide className='bg-white shadow-md rounded-nor '>
                             <div className='relative'>
                                 <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -125,7 +125,7 @@ const Ranshe = () => {
                         </SwiperSlide>
 
                         {/* Card 4 */}
-                        <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                        <SwiperSlide className='bg-white shadow-md rounded-nor '>
                             <div className='relative'>
                                 <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -153,7 +153,7 @@ const Ranshe = () => {
                         </SwiperSlide>
 
                         {/* Card 5 */}
-                        <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                        <SwiperSlide className='bg-white shadow-md rounded-nor '>
                             <div className='relative'>
                                 <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -182,7 +182,7 @@ const Ranshe = () => {
                         </SwiperSlide>
 
                         {/* Card 6 */}
-                        <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                        <SwiperSlide className='bg-white shadow-md rounded-nor '>
                             <div className='relative'>
                                 <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -211,7 +211,7 @@ const Ranshe = () => {
                         </SwiperSlide>
 
                         {/* Card 7 */}
-                        <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                        <SwiperSlide className='bg-white shadow-md rounded-nor '>
                             <div className='relative'>
                                 <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
@@ -240,7 +240,7 @@ const Ranshe = () => {
                         </SwiperSlide>
 
                         {/* Card 8 */}
-                        <SwiperSlide className='bg-white shadow-xl rounded-nor '>
+                        <SwiperSlide className='bg-white shadow-md rounded-nor '>
                             <div className='relative'>
                                 <button className='absolute right-2 bg-slate-200/50 p-2
                              rounded-nor'>
