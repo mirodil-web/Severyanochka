@@ -17,18 +17,11 @@ const Header = () => {
 
     const [badge, setBadge] = useState(5)
     const [open, setOpen] = useState(false)
-    const [isOverflowhidden, setOverflowhidden] = useState()
 
-    const toggleowerflow = () => {
-        setOverflowhidden(!isOverflowhidden);
-    }
-    const [number, setNumber] = useState(0)
 
     const [katalog, setKatalog] = useState(false)
 
-    const showKatalog = () => {
-        setKatalog(!katalog)
-    }
+   
 
 
 
@@ -48,10 +41,9 @@ const Header = () => {
                     {/* katalog block  div */}
                     <div className='flex items-center'>
 
-                        <button onClick={showKatalog } className='rounded-nor bg-Yashil flex text-white p-2 space-x-2 mr-4'>
-                            <img width={24} height={24} src={Menu} alt="Hamburger icon" />
+                        <Link to='/katalog' className='rounded-nor bg-Yashil flex text-white p-2 space-x-2 mr-4'>
                             <span className='text-base font-normal'> Каталог</span>
-                        </button>
+                        </Link>
 
                         {/* modal */}
                         {open && <div onClick={() => setOpen(false)} className='w-full flex justify-center items-center h-full fixed left-0 bottom-0 z-10 '>
@@ -115,87 +107,6 @@ const Header = () => {
 
                 </div>
             </header>
-
-            { katalog && <div className='fixed bg-white w-full shadow-md z-10'>
-                <div className="container">
-                    <ul className='py-10 grid grid-cols-4 gap-10'>
-                        <li>
-                            <ul className='space-y-6'>
-                                <li>
-                                    <Link to='/' className='hover:text-yellow-600 font-bold text-base'>Молоко, сыр, яйцо</Link>
-                                </li>
-
-                                <li>
-                                    <Link to='/' className='hover:text-yellow-600 font-bold text-base'>Хлеб</Link>
-                                </li>
-
-                                <li>
-                                    <Link to='/' className='hover:text-yellow-600 font-bold text-base'>Фрукты и овощи</Link>
-                                </li>
-
-                                <li>
-                                    <Link to='/' className='hover:text-yellow-600 font-bold text-base'>Замороженные продукты</Link>
-                                </li>
-
-                                
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul className='space-y-6'>
-                                <li>
-                                    <Link to='/' className='hover:text-yellow-600 font-bold text-base'>Напитки</Link>
-                                </li>
-
-                                <li>
-                                    <Link to='/' className='hover:text-yellow-600 font-bold text-base'>Кондитерские изделия</Link>
-                                </li>
-
-                                <li>
-                                    <Link to='/' className='hover:text-yellow-600 font-bold text-base'>Чай, кофе</Link>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul className='space-y-6'>
-                                <li>
-                                    <Link to='/' className='hover:text-yellow-600 font-bold text-base'>Бакалея</Link>
-                                </li>
-
-                                <li>
-                                    <Link to='/' className='hover:text-yellow-600 font-bold text-base'>Здоровое питание</Link>
-                                </li>
-
-                                <li>
-                                    <Link to='/' className='hover:text-yellow-600 font-bold text-base'>Зоотовары</Link>
-                                </li>
-
-
-                            </ul>
-                        </li>
-
-                        <li>
-                            <ul className='space-y-6'>
-                                <li>
-                                    <Link to='/' className='hover:text-yellow-600 font-bold text-base'>Непродовольственные товары</Link>
-                                </li>
-
-                                <li>
-                                    <Link to='/' className='hover:text-yellow-600 font-bold text-base'>Детское питание</Link>
-                                </li>
-
-                                <li>
-                                    <Link to='/' className='hover:text-yellow-600 font-bold text-base'>Мясо, птица, колбаса</Link>
-                                </li>
-
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            }
 
         </>
     )

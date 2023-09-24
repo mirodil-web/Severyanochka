@@ -30,7 +30,7 @@ const Footer = () => {
                             <Link className='hover:text-[#f63]' to='/about'> О компании</Link>
                         </li>
                         <li>
-                            <Link className='hover:text-[#f63]' to='/'>Контакты</Link>
+                            <Link className='hover:text-[#f63]' to='/kontakt'>Контакты</Link>
                         </li>
                         <li>
                             <Link className='hover:text-[#f63]' to="/vakansi">Вакансии</Link>
@@ -73,7 +73,7 @@ const Footer = () => {
 
                         <div className='flex items-center mb-7'>
                             <img className='mr-2' src={Telephone} alt="Phone" />
-                            <span>8 800 777 33 33</span>
+                            <a href='tel:+998887808882'>8 800 777 33 33</a>
                         </div>
 
                         <div className='flex items-center'>

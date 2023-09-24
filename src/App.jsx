@@ -15,6 +15,7 @@ import Korzina from './pages/Korzina';
 import Aksiya from './pages/PageAcksiya';
 import Novinki from './pages/Novinki';
 import Pokupki from './pages/Pokupki';
+import Kontakt from './pages/Kontakt';
 
 
 
@@ -32,6 +33,7 @@ const App = () => {
         <Route path='aksiya' element={<Aksiya />} />
         <Route path='novinki' element={<Novinki />} />
         <Route path='pokupki' element={<Pokupki />} />
+        <Route path='kontakt' element={<Kontakt />} />
 
       </Route>
     )
