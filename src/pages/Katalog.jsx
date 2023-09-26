@@ -36,77 +36,77 @@ const Katalog = () => {
           </div>
 
           {/* card3 */}
-          <div className='rounded-nor h-[200px] relative bg-molokoSir bg-auto  '>
+          <div className='rounded-nor h-[200px] relative bg-fruit bg-auto  '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
               <h3>Фрукты и овощи</h3>
             </div>
           </div>
 
           {/* card4 */}
-          <div className='rounded-nor h-[200px] relative bg-molokoSir bg-auto  '>
+          <div className='rounded-nor h-[200px] relative bg-muzlatilgan bg-auto  '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
               <h3>Замороженные продукты</h3>
             </div>
           </div>
 
           {/* card5*/}
-          <div className='rounded-nor h-[200px] relative bg-molokoSir bg-auto  '>
+          <div className='rounded-nor h-[200px] relative bg-ichimlik bg-auto  '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
               <h3>Напитки</h3>
             </div>
           </div>
 
           {/* card6 */}
-          <div className='rounded-nor h-[200px] relative bg-molokoSir bg-auto  '>
+          <div className='rounded-nor h-[200px] relative bg-izdeliya bg-auto  '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
               <h3>Кондитерские изделия</h3>
             </div>
           </div>
 
           {/* card7 */}
-          <div className='rounded-nor h-[200px] relative bg-molokoSir bg-auto  '>
+          <div className='rounded-nor h-[200px] relative bg-teaandcofe bg-auto  '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
               <h3>Чай, кофе</h3>
             </div>
           </div>
 
           {/* card8 */}
-          <div className='rounded-nor h-[200px] relative bg-molokoSir bg-auto  '>
+          <div className='rounded-nor h-[200px] relative bg-bakaleya bg-auto  '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
               <h3>Бакалея</h3>
             </div>
           </div>
 
           {/* card9 */}
-          <div className='rounded-nor h-[200px] relative bg-molokoSir bg-auto  '>
+          <div className='rounded-nor h-[200px] relative bg-pitanie bg-auto  '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
               <h3>Здоровое питание</h3>
             </div>
           </div>
 
           {/* card10 */}
-          <div className='rounded-nor h-[200px] relative bg-molokoSir bg-auto col-span-2 '>
+          <div className='rounded-nor h-[200px] relative bg-zatovariy bg-auto col-span-2 '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
               <h3>Зоотовары</h3>
             </div>
           </div>
 
           {/* card11 */}
-          <div className='rounded-nor h-[200px] relative bg-molokoSir bg-auto  '>
+          <div className='rounded-nor h-[200px] relative bg-baby bg-auto  '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
               <h3>Детское питание</h3>
             </div>
           </div>
 
           {/* card12 */}
-          <div className='rounded-nor h-[200px] relative bg-molokoSir bg-auto col-span-2 '>
+          <div className='rounded-nor h-[200px] relative bg-Kolbasakatalog bg-auto col-span-2 '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
               <h3>Мясо, птица, колбаса</h3>
             </div>
           </div>
 
           {/* card13 */}
-          <div className='rounded-nor h-[200px] relative bg-molokoSir bg-auto  '>
+          <div className='rounded-nor h-[200px] relative bg-xost bg-auto  '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
               <h3>Непродовольственные товары</h3>
             </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -16,15 +16,44 @@ import Aksiya from './pages/PageAcksiya';
 import Novinki from './pages/Novinki';
 import Pokupki from './pages/Pokupki';
 import Kontakt from './pages/Kontakt';
-
+import { acsiyadata } from './store/data';
 
 
 const App = () => {
 
+  const [cardLike, setCardLike] = useState([])
+  const [like, setLike] = useState(false)
+
+
+  const addLike = (i) => {
+    const found = cardLike.find((e) => e.id === i);
+
+    const productToAdd = acsiyadata.find((e) => e.id === i);
+    setCardLike([...cardLike, { ...productToAdd, miqdor: 1 }]);
+
+
+  };
+
+  const removeLike = (i) => {
+    const updatedShop = cardLike.filter((e) => e.id !== i);
+    setCardLike(updatedShop);
+
+  };
+
+  const qoshish = (e) => {
+    setLike(!like)
+    if (!like) {
+      addLike(e)
+    }
+    else {
+      removeLike(e)
+    }
+  }
+ console.log(cardLike);
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<RootLayout />}>
-        <Route index element={<Home/>} />
+        <Route index element={<Home qoshish={qoshish} like={like} />} />
         <Route path='izbrozenoe' element={<Izbrozeniya />} />
         <Route path='katalog' element={<Katalog />} />
         <Route path='vakansi' element={<Vakansi />} />

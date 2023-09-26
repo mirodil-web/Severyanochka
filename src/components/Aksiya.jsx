@@ -1,27 +1,20 @@
 import React, { useState } from 'react'
-import CardImg1 from "../../public/assets/card-img1.png";
 import Heart from "../../public/assets/heart.png";
-import Milk from "../../public/assets/milk.png";
-import Kolbasa from "../../public/assets/kolbasa.png";
-import PaketKolbasa from "../../public/assets/kolbasapaket.png";
-import Sosiska from "../../public/assets/sosiska.png";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
 
 
 
 import 'swiper/css';
+import { acsiyadata } from '../store/data';
 
 
 
 
-const Aksiya = () => {
+const Aksiya = ({qoshish, like }) => {
 
     const [badge, setBadge] = useState()
     
-    const qoshish = () => {
-        
-    }
 
     return (
         <section className='pt-20 pb-14'>
@@ -39,325 +32,61 @@ const Aksiya = () => {
                 {/* Card wrapper */}
                 <Swiper className='py-10' spaceBetween={40}
                     slidesPerView={4}
-                     autoplay={{
+                    autoplay={{
                         "delay": 500,
                         "disableOnInteraction": false
-                    }} 
+                    }}
                     loop={true}
-                   
+
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
+ 
+                    {acsiyadata.map((acsiyadata) => {
+                        return (
+                            <SwiperSlide key={acsiyadata.id} className='bg-white shadow-md relative '>
+                                <div className='p-2 relative'>
+                                    <button  onClick={()=>qoshish(acsiyadata.id)} className={`shadow absolute right-2 p-2 ${like ? 'bg-red-500' : 'bg-slate-200/50'}
+                                 rounded-nor`}>
+                                        <img width={22} className='shadow-white shadow-md rounded-lg p-0.5' height={22} src={Heart} alt="Heart icon" />
+                                    </button>
+                                    <img width={272} height={160} className='mx-auto' src={acsiyadata.img} alt="Card img" />
+                                    <span className='bg-olov rounded-nor p-1 absolute bottom-2 text-white'>
+                                        - 50%
+                                    </span>
+                                </div>
 
+                                <div className='p-2 space-y-2'>
+
+                                    <div>
+                                        <div className='flex justify-between items-center'>
+                                            <h3 className='font-bold text-lg text-qorag'>44,50 ₽</h3>
+                                            <h4 className='text-base  font-normal text-blue-950'>50,50 ₽</h4>
+                                        </div>
+                                        <div className='flex justify-between items-center'>
+                                            <span className='text-xs text-gray-400 font-normal'>С картой</span>
+                                            <span className='text-xs text-gray-400 font-normal'>Обычная</span>
+                                        </div>
+                                    </div>
+
+                                    <p className='text-base  font-normal text-qorag'>
+                                        {acsiyadata.name}
+                                    </p>
+
+                                    {/* **************************** */}
+
+                                    {/* ****************** */}
+
+                                    <button className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>{acsiyadata.button}</button>
+
+                                </div>
+                            </SwiperSlide>
+                        )
+                    })}
                     {/* Card 1 */}
-                    <SwiperSlide className='bg-white shadow-md relative'>
-                        <div className='p-2 relative'>
-                            <button  className='absolute right-2 bg-red-700/50 p-2
-                             rounded-nor'>
-                                <img width={22} height={22} src={Heart} alt="Heart icon" />
-                            </button>
-                            <img width={272} height={160} className='mx-auto' src={CardImg1} alt="Card img" />
-                            <span className='bg-olov rounded-nor p-1 absolute bottom-2 text-white'>
-                                - 50%
-                            </span>
-                        </div>
 
-                        <div className='p-2 space-y-2'>
 
-                            <div>
-                                <div className='flex justify-between items-center'>
-                                    <h3 className='font-bold text-lg text-qorag'>44,50 ₽</h3>
-                                    <h4 className='text-base  font-normal text-blue-950'>50,50 ₽</h4>
-                                </div>
-                                <div className='flex justify-between items-center'>
-                                    <span className='text-xs text-gray-400 font-normal'>С картой</span>
-                                    <span className='text-xs text-gray-400 font-normal'>Обычная</span>
-                                </div>
-                            </div>
 
-                            <p className='text-base  font-normal text-qorag'>
-                                Г/Ц Блинчики с мясом вес, <br /> Россия
-                            </p>
-
-                            {/* **************************** */}
-
-                            {/* ****************** */}
-
-                            <button className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
-
-                        </div>
-                    </SwiperSlide>
-
-                    {/* Card 2 */}
-                    <SwiperSlide className='bg-white shadow-md'>
-                        <div className='p-2 relative'>
-                            <button className='absolute right-2 bg-slate-200/50 p-2
-                             rounded-nor'>
-                                <img width={22} height={22} src={Heart} alt="Heart icon" />
-                            </button>
-                            <img width={272} height={160} className='mx-auto' src={Milk} alt="Card img" />
-                            <span className='bg-olov rounded-nor p-1 absolute bottom-2 text-white'>
-                                - 50%
-                            </span>
-                        </div>
-                        <div className='p-2 space-y-2'>
-
-                            <div>
-                                <div className='flex justify-between items-center'>
-                                    <h3 className='font-bold text-lg text-qorag'>44,50 ₽</h3>
-                                    <h4 className='text-base  font-normal text-blue-950'>50,50 ₽</h4>
-                                </div>
-                                <div className='flex justify-between items-center'>
-                                    <span className='text-xs text-gray-400 font-normal'>С картой</span>
-                                    <span className='text-xs text-gray-400 font-normal'>Обычная</span>
-                                </div>
-                            </div>
-
-                            <p className='text-base  font-normal text-qorag'>
-                                Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...
-                            </p>
-
-                            {/* **************************** */}
-
-                            {/* ****************** */}
-
-                            <button className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
-
-                        </div>
-                    </SwiperSlide>
-
-                    {/* Card 3 */}
-                    <SwiperSlide className='bg-white shadow-md'>
-                        <div className='p-2 relative'>
-                            <button className='absolute right-2 bg-slate-200/50 p-2
-                             rounded-nor'>
-                                <img width={22} height={22} src={Heart} alt="Heart icon" />
-                            </button>
-                            <img width={272} height={160} className='mx-auto' src={PaketKolbasa} alt="Card img" />
-                            <span className='bg-olov rounded-nor p-1 absolute bottom-2 text-white'>
-                                - 50%
-                            </span>
-                        </div>
-
-                        <div className='p-2 space-y-2'>
-
-                            <div>
-                                <div className='flex justify-between items-center'>
-                                    <h3 className='font-bold text-lg text-qorag'>44,50 ₽</h3>
-                                    <h4 className='text-base  font-normal text-blue-950'>50,50 ₽</h4>
-                                </div>
-                                <div className='flex justify-between items-center'>
-                                    <span className='text-xs text-gray-400 font-normal'>С картой</span>
-                                    <span className='text-xs text-gray-400 font-normal'>Обычная</span>
-                                </div>
-                            </div>
-
-                            <p className='text-base  font-normal text-qorag'>
-                                Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...
-                            </p>
-
-                            {/* **************************** */}
-
-                            {/* ****************** */}
-
-                            <button className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
-
-                        </div>
-                    </SwiperSlide>
-
-                    {/* Card 4 */}
-                    <SwiperSlide className='bg-white shadow-md'>
-                        <div className='p-2 relative'>
-                            <button className='absolute right-2 bg-slate-200/50 p-2
-                             rounded-nor'>
-                                <img width={22} height={22} src={Heart} alt="Heart icon" />
-                            </button>
-                            <img width={272} height={160} className='mx-auto' src={Sosiska} alt="Card img" />
-                            <span className='bg-olov rounded-nor p-1 absolute bottom-2 text-white'>
-                                - 50%
-                            </span>
-                        </div>
-
-                        <div className='p-2 space-y-2'>
-
-                            <div>
-                                <div className='flex justify-between items-center'>
-                                    <h3 className='font-bold text-lg text-qorag'>44,50 ₽</h3>
-                                    <h4 className='text-base  font-normal text-blue-950'>50,50 ₽</h4>
-                                </div>
-                                <div className='flex justify-between items-center'>
-                                    <span className='text-xs text-gray-400 font-normal'>С картой</span>
-                                    <span className='text-xs text-gray-400 font-normal'>Обычная</span>
-                                </div>
-                            </div>
-
-                            <p className='text-base  font-normal text-qorag'>
-                                Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...
-                            </p>
-
-                            {/* **************************** */}
-
-                            {/* ****************** */}
-
-                            <button className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
-
-                        </div>
-                    </SwiperSlide>
-
-                    {/* Card 1 */}
-                    <SwiperSlide className='bg-white shadow-md relative'>
-                        <div className='p-2 relative'>
-                            <button className='absolute right-2 bg-slate-200/50 p-2
-                             rounded-nor'>
-                                <img width={22} height={22} src={Heart} alt="Heart icon" />
-                            </button>
-                            <img width={272} height={160} className='mx-auto' src={CardImg1} alt="Card img" />
-                            <span className='bg-olov rounded-nor p-1 absolute bottom-2 text-white'>
-                                - 50%
-                            </span>
-                        </div>
-
-                        <div className='p-2 space-y-2'>
-
-                            <div>
-                                <div className='flex justify-between items-center'>
-                                    <h3 className='font-bold text-lg text-qorag'>44,50 ₽</h3>
-                                    <h4 className='text-base  font-normal text-blue-950'>50,50 ₽</h4>
-                                </div>
-                                <div className='flex justify-between items-center'>
-                                    <span className='text-xs text-gray-400 font-normal'>С картой</span>
-                                    <span className='text-xs text-gray-400 font-normal'>Обычная</span>
-                                </div>
-                            </div>
-
-                            <p className='text-base  font-normal text-qorag'>
-                                Г/Ц Блинчики с мясом вес, <br /> Россия
-                            </p>
-
-                            {/* **************************** */}
-
-                            {/* ****************** */}
-
-                            <button className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
-
-                        </div>
-                    </SwiperSlide>
-
-                    {/* Card 2 */}
-                    <SwiperSlide className='bg-white shadow-md'>
-                        <div className='p-2 relative'>
-                            <button className='absolute right-2 bg-slate-200/50 p-2
-                             rounded-nor'>
-                                <img width={22} height={22} src={Heart} alt="Heart icon" />
-                            </button>
-                            <img width={272} height={160} className='mx-auto' src={Milk} alt="Card img" />
-                            <span className='bg-olov rounded-nor p-1 absolute bottom-2 text-white'>
-                                - 50%
-                            </span>
-                        </div>
-                        <div className='p-2 space-y-2'>
-
-                            <div>
-                                <div className='flex justify-between items-center'>
-                                    <h3 className='font-bold text-lg text-qorag'>44,50 ₽</h3>
-                                    <h4 className='text-base  font-normal text-blue-950'>50,50 ₽</h4>
-                                </div>
-                                <div className='flex justify-between items-center'>
-                                    <span className='text-xs text-gray-400 font-normal'>С картой</span>
-                                    <span className='text-xs text-gray-400 font-normal'>Обычная</span>
-                                </div>
-                            </div>
-
-                            <p className='text-base  font-normal text-qorag'>
-                                Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...
-                            </p>
-
-                            {/* **************************** */}
-
-                            {/* ****************** */}
-
-                            <button className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
-
-                        </div>
-                    </SwiperSlide>
-
-                    {/* Card 3 */}
-                    <SwiperSlide className='bg-white shadow-md'>
-                        <div className='p-2 relative'>
-                            <button className='absolute right-2 bg-slate-200/50 p-2
-                             rounded-nor'>
-                                <img width={22} height={22} src={Heart} alt="Heart icon" />
-                            </button>
-                            <img width={272} height={160} className='mx-auto' src={PaketKolbasa} alt="Card img" />
-                            <span className='bg-olov rounded-nor p-1 absolute bottom-2 text-white'>
-                                - 50%
-                            </span>
-                        </div>
-
-                        <div className='p-2 space-y-2'>
-
-                            <div>
-                                <div className='flex justify-between items-center'>
-                                    <h3 className='font-bold text-lg text-qorag'>44,50 ₽</h3>
-                                    <h4 className='text-base  font-normal text-blue-950'>50,50 ₽</h4>
-                                </div>
-                                <div className='flex justify-between items-center'>
-                                    <span className='text-xs text-gray-400 font-normal'>С картой</span>
-                                    <span className='text-xs text-gray-400 font-normal'>Обычная</span>
-                                </div>
-                            </div>
-
-                            <p className='text-base  font-normal text-qorag'>
-                                Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...
-                            </p>
-
-                            {/* **************************** */}
-
-                            {/* ****************** */}
-
-                            <button className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
-
-                        </div>
-                    </SwiperSlide>
-
-                    {/* Card 4 */}
-                    <SwiperSlide className='bg-white shadow-md'>
-                        <div className='p-2 relative'>
-                            <button className='absolute right-2 bg-slate-200/50 p-2
-                             rounded-nor'>
-                                <img width={22} height={22} src={Heart} alt="Heart icon" />
-                            </button>
-                            <img width={272} height={160} className='mx-auto' src={Sosiska} alt="Card img" />
-                            <span className='bg-olov rounded-nor p-1 absolute bottom-2 text-white'>
-                                - 50%
-                            </span>
-                        </div>
-
-                        <div className='p-2 space-y-2'>
-
-                            <div>
-                                <div className='flex justify-between items-center'>
-                                    <h3 className='font-bold text-lg text-qorag'>44,50 ₽</h3>
-                                    <h4 className='text-base  font-normal text-blue-950'>50,50 ₽</h4>
-                                </div>
-                                <div className='flex justify-between items-center'>
-                                    <span className='text-xs text-gray-400 font-normal'>С картой</span>
-                                    <span className='text-xs text-gray-400 font-normal'>Обычная</span>
-                                </div>
-                            </div>
-
-                            <p className='text-base  font-normal text-qorag'>
-                                Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...
-                            </p>
-
-                            {/* **************************** */}
-
-                            {/* ****************** */}
-
-                            <button className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
-
-                        </div>
-                    </SwiperSlide>
 
                 </Swiper>
 

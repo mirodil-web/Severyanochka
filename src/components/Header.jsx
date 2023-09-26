@@ -101,7 +101,7 @@ const Header = () => {
 
                     </div>
 
-                    <button onClick={() => setOpen(true)} className='border-Yashil px-5 py-1 shadow-Yashil/50 shadow-sm rounded-nor hover:bg-Yashil/50  border'>
+                    <button onClick={() => setOpen(true)} className=' hover:shadow-xl px-5 py-1 shadow-Yashil shadow-sm rounded-nor hover:bg-Yashil/50  border'>
                         <span className='font-bold'>Вход </span>
                     </button>
 

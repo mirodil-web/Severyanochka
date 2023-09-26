@@ -8,11 +8,11 @@ import Pridlojeniya from '../components/Pridlojeniya'
 import Nashi from '../components/Nashi'
 import Ctati from '../components/Ctati'
 
-const Home = () => {
+const Home = ({ qoshish, like }) => {
     return (
         <>
             <Hero />
-            <Aksiya />
+            <Aksiya qoshish={qoshish} like={like} />
             <Novinki />
             <Ranshe />
             <Pridlojeniya />

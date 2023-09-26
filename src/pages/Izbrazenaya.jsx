@@ -19,32 +19,9 @@ const Izbrazenaya = () => {
         </Breadcrumbs>
 
         <h2 className='text-6xl font-bold mb-14'>Избраное</h2>
-        <div className='flex'>
-
-          {/* left block */}
-          <Filtr />
-
-          {/* right block */}
-          <div>
-
-            <div className='mb-10'>
-              <button>Цена от 99 до 2599 </button>
-              <button>Очистить</button>
-            </div>
-
-            <div  className='flex justify-center'>
-              <div className='grid grid-cols-3 gap-10'>
-
-              </div>
-
-              <div className='flex justify-center items-center'>
-
-              <button className='p-4 bg-[#F3F2F1] text-2xl rounded-nor flex justify-center'>Показать ещё</button>
-              </div>
-            </div>
-
-
-          </div>
+       
+        
+        <div className='grid grid-cols-4'>
 
         </div>
 
