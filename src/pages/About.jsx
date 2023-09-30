@@ -3,7 +3,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Odamlar from '../../public/assets/Vector.png'
 import Group from '../../public/assets/GroupDev.png'
-import Logo from '../../public/assets/logoG.png'
 
 
 const About = () => {

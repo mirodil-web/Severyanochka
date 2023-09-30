@@ -63,9 +63,9 @@ const Novinki = () => {
 
                                     <SwiperSlide key={novinkidata.id} className='bg-white shadow-md rounded-nor '>
                                         <div className='relative'>
-                                            <button onClick={() => qoshish(novinkidata.id)} className={`shadow absolute right-2 p-2 ${like ? 'bg-red-500' : 'bg-slate-200/50'}
-                                 rounded-nor`}>
-                                                <img width={22} className='shadow-white shadow-md rounded-lg p-0.5' height={22} src={Heart} alt="Heart icon" />
+                                            <button onClick={() => qoshish(novinkidata.id)} className={`shadow-lg absolute rounded-full right-2 p-2 ${like ? 'bg-red-400' : 'bg-slate-200/50'}
+                                 rounded-full duration-500`}>
+                                                <img width={22} className=' rounded-lg ' height={22} src={Heart} alt="Heart icon" />
                                             </button>
                                             <img width={272} height={160} className='mx-auto' src={novinkidata.img} alt="Card img" />
                                         </div>

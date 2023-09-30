@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Korzina = () => {
   return (
-    <section>
+    <div className='pb-20'>
       <div className="container">
         <Breadcrumbs className='space-x-4 py-6'>
           <Link className='mr-4 text-xs hover:text-yellow-600' to='/'>
@@ -15,8 +15,10 @@ const Korzina = () => {
             Корзина
           </Link>
         </Breadcrumbs>
+
+        <h2 className='text-6xl text-qorag font-bold mb-14'>Корзина</h2>
       </div>
-    </section>
+    </div>
   )
 }
 

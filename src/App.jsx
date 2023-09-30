@@ -17,6 +17,7 @@ import Novinki from './pages/Novinki';
 import Pokupki from './pages/Pokupki';
 import Kontakt from './pages/Kontakt';
 import { acsiyadata } from './store/data';
+import Carddata from './components/Carddata';
 
 
 const App = () => {
@@ -63,7 +64,7 @@ const App = () => {
         <Route path='novinki' element={<Novinki />} />
         <Route path='pokupki' element={<Pokupki />} />
         <Route path='kontakt' element={<Kontakt />} />
-
+        <Route path='carddata/:id' element={<Carddata />} />
       </Route>
     )
   )

@@ -28,14 +28,14 @@ const Header = () => {
     return (
         <>
 
-            <header className='py-5 shadow-md sticky top-0 bg-pink-50 z-20'>
+            <header className='py-5 shadow-md   sticky top-0 bg-pink-50 z-20'>
 
                 {/* container */}
                 <div className='container flex justify-between items-center'>
 
                     {/* header logo */}
-                    <Link to="/">
-                        <img width={152} height={32} src={Logo} alt="logo img" />
+                    <Link to="/" className='hidden xl:block'>
+                        <img className='' width={152} height={32} src={Logo} alt="logo img" />
                     </Link>
 
                     {/* katalog block  div */}
@@ -72,7 +72,7 @@ const Header = () => {
                         }
 
                         <div className='relative'>
-                            <input className='p-2 border border-Yashil rounded-nor w-[470px] ' type="search" placeholder='Найти товар' />
+                            <input className='w-[200px] md:w-[350px] lg:w-[550px] p-2 border border-Yashil rounded-nor  ' type="search" placeholder='Найти товар' />
                             <img width={22} height={22} className='absolute right-2 top-2 bg-white' src={Search} alt="Search img" />
                         </div>
                     </div>
