@@ -36,7 +36,7 @@ const Ranshe = () => {
 
     return (
         <div>
-            <section className='py-14'>
+            <section className='py-14  bg-[#FBF8EC]'>
                 <div className="container">
 
                     {/* title */}
@@ -49,7 +49,7 @@ const Ranshe = () => {
                     </div>
 
                     {/* Card wrapper */}
-                    <Swiper className=' py-10'
+                    <Swiper className=' py-10 px-2'
                         spaceBetween={40}
                         slidesPerView={4}
                         autoplay={{
@@ -75,7 +75,7 @@ const Ranshe = () => {
                                     <div className='p-2 space-y-2'>
 
                                         <div className='flex justify-between items-center mb-7'>
-                                            <h3 className='font-bold text-lg text-qorag'>{ ranshedata.price}</h3>
+                                            <h3 className='font-bold text-lg text-qorag'>{ranshedata.price}</h3>
                                         </div>
 
 

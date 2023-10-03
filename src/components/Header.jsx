@@ -13,7 +13,7 @@ import Buttonx from '../../public/assets/Button.svg'
 import Exit from '../../public/assets/Exit.svg'
 
 
-const Header = () => {
+const Header = ({cardLike}) => {
 
     const [badge, setBadge] = useState(5)
     const [open, setOpen] = useState(false)
@@ -28,10 +28,10 @@ const Header = () => {
     return (
         <>
 
-            <header className='py-5 shadow-md   sticky top-0 bg-pink-50 z-20'>
+            <header className='py-5 shadow-md   sticky top-0 bg-white z-20'>
 
                 {/* container */}
-                <div className='container flex justify-between items-center'>
+                <div className=' container flex justify-between items-center'>
 
                     {/* header logo */}
                     <Link to="/" className='hidden xl:block'>
@@ -81,7 +81,7 @@ const Header = () => {
                     <div className="flex items-center space-x-7">
 
                         <Link to='izbrozenoe'>
-                            <Badge count={badge}>
+                            <Badge count={`${1}`}>
                                 <button className='flex flex-col justify-center items-center'>
                                     <img className='mb-2' src={Heart} width={24} height={24} alt="heart img" />
                                     <span>Избранное</span>

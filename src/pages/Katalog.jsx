@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Katalog = () => {
   return (
-    <div className='#FBF8EC'>
+    <div className='bg-[#FBF8EC]'>
       <div className="container">
 
         <Breadcrumbs className='space-x-4 py-6'>
@@ -19,12 +19,12 @@ const Katalog = () => {
 
         <h2 className='text-6xl font-bold mb-14 text-qorag'>Каталог</h2>
 
-        <div className='grid grid-cols-4 pb-20 gap-10'>
+        <div className='grid grid-cols-2 minm:grid-cols-3  md:grid-cols-4 pb-20 gap-10'>
 
             {/* card1 */}
           <Link to='/' className='rounded-nor h-[200px] relative bg-molokoSir bg-no-repeat bg-center  col-span-2 '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white   font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
-              <h3>Молоко, сыр, яйцо</h3>
+              <h3 >Молоко, сыр, яйцо</h3>
             </div>
           </Link>
 
@@ -98,17 +98,24 @@ const Katalog = () => {
             </div>
           </div>
 
+          {/* card13 */}
+          <div className='rounded-nor h-[200px] bg-no-repeat bg-center relative bg-xost bg-auto  md:hidden '>
+            <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
+              <h3>Непродовольственные товары</h3>
+            </div>
+          </div>
+
           {/* card12 */}
-          <div className='rounded-nor h-[200px] bg-no-repeat bg-center relative bg-Kolbasakatalog bg-auto col-span-2 '>
+          <div className='rounded-nor h-[200px] bg-no-repeat bg-center relative bg-Kolbasakatalog bg-auto col-span-2  '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
               <h3>Мясо, птица, колбаса</h3>
             </div>
           </div>
 
           {/* card13 */}
-          <div className='rounded-nor h-[200px] bg-no-repeat bg-center relative bg-xost bg-auto  '>
+          <div className='rounded-nor h-[200px] bg-no-repeat bg-center relative bg-xost bg-auto hidden md:block '>
             <div className='pt-20 pl-2.5 pb-2 absolute text-white  font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
-              <h3>Непродовольственные товары</h3>
+              <h3 >Непродовольственные товары</h3>
             </div>
           </div>
 

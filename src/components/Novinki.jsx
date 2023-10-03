@@ -32,7 +32,7 @@ const Novinki = () => {
     }
 
             return (
-                <section className='py-14'>
+                <section className='py-14 bg-[#FBF8EC]'>
                     <div className="container">
 
                         {/* title */}
@@ -45,7 +45,7 @@ const Novinki = () => {
                         </div>
 
                         {/* Card wrapper */}
-                        <Swiper className='py-10 '
+                        <Swiper className='py-10  px-2'
                             spaceBetween={40}
                             slidesPerView={4}
                             autoplay={{

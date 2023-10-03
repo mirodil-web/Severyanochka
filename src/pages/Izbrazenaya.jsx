@@ -18,7 +18,7 @@ const Izbrazenaya = () => {
           </span>
         </Breadcrumbs>
 
-        <h2 className='text-6xl font-bold mb-14'>Избраное</h2>
+        <h2 className='text-6xl font-bold mb-14 text-qorag'>Избраное</h2>
        
         
         <div className='grid grid-cols-4'>

@@ -3,6 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Odamlar from '../../public/assets/Vector.png'
 import Group from '../../public/assets/GroupDev.png'
+import Logo from '../../public/assets/logox.svg'
 
 
 const About = () => {
@@ -47,7 +48,7 @@ const About = () => {
               </ul>
 
               <div className='py-14  flex items-center justify-around'>
-                  <img width={127} height={103} src={Logo} alt="Logo" />
+                  <img width={137} height={113} src={Logo} alt="Logo" />
 
                   <div className='py-7 px-10 rounded-nor bg-[#E5FFDE]'> 
                       <h2 className='text-[#70C05B] text-2xl font-bold'> Спасибо за то, что вы с нами. Северяночка, везет всегда!</h2>

@@ -5,9 +5,8 @@ export const acsiyadata = [
         chegirma: '- 50%',
         price: '44,50 ₽',
         price2: '50,50 ₽',
-        name: 'Г/Ц Блинчики с м',
+        name: 'Г/Ц Блинчики с мясом вес, Россия Блинчики',
         button: 'В корзину',
-          imgx: '../../public/assets/card-img1.png'
     },
     {
         id: 2,
@@ -17,27 +16,24 @@ export const acsiyadata = [
         price2: '50,50 ₽',
         name: 'Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...',
         button: 'В корзину',
-          imgx: '../../public/assets/card-img1.png'
     },
     {
         id: 3,
-        img: '../../public/assets/card-img1.png',
+        img: '../../public/assets/kolbasapaket.png',
         chegirma: ' - 50%',
         price: '44,50 ₽',
         price2: '50,50 ₽',
         name: 'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
         button: 'В корзину',
-        imgx: '../../public/assets/card-img1.png'
     },
     {
         id: 4,
-        img: '../../public/assets/card-img1.png',
+        img: '../../public/assets/sosiska.png',
         chegirma: ' - 50%',
         price: '44,50 ₽',
         price2: '50,50 ₽',
         name: 'Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...',
         button: 'В корзину',
-        imgx: '../../public/assets/card-img1.png'
     },
     {
         id: 5,
@@ -60,7 +56,7 @@ export const acsiyadata = [
     },
     {
         id: 7,
-        img: '../../public/assets/card-img1.png',
+        img: '../../public/assets/kolbasapaket.png',
         chegirma: ' - 50%',
         price: '44,50 ₽',
         price2: '50,50 ₽',
@@ -69,7 +65,7 @@ export const acsiyadata = [
     },
     {
         id: 8,
-        img: '../../public/assets/card-img1.png',
+        img: '../../public/assets/sosiska.png',
         chegirma: ' - 50%',
         price: '44,50 ₽',
         price2: '50,50 ₽',
@@ -196,25 +192,3 @@ export const ranshedata = [
     },
 ]
 
-export const katalogimgdata = [
-    {
-        id: 1,
-        imgx: '../../public/assets/card-img1.png'
-    },
-    {
-        id: 2,
-        img: '../../public/assets/card-img1.png'
-    },
-     {
-        id: 3,
-        img: '../../public/assets/card-img1.png'
-    },
-      {
-        id: 4,
-        img: '../../public/assets/card-img1.png'
-    },
-       {
-        id: 5,
-        img: '../../public/assets/card-img1.png'
-    }
-]

@@ -50,10 +50,10 @@ const App = () => {
       removeLike(e)
     }
   }
- console.log(cardLike);
+ console.log(cardLike.le);
   const routes = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<RootLayout />}>
+      <Route path='/' element={<RootLayout cardLike={cardLike} />}>
         <Route index element={<Home qoshish={qoshish} like={like} />} />
         <Route path='izbrozenoe' element={<Izbrozeniya />} />
         <Route path='katalog' element={<Katalog />} />
