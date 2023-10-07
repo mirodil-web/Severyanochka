@@ -18,6 +18,7 @@ import Pokupki from './pages/Pokupki';
 import Kontakt from './pages/Kontakt';
 import { acsiyadata } from './store/data';
 import Carddata from './components/Carddata';
+import Cdetail from './pages/Cdetail';
 
 
 const App = () => {
@@ -65,6 +66,7 @@ const App = () => {
         <Route path='pokupki' element={<Pokupki />} />
         <Route path='kontakt' element={<Kontakt />} />
         <Route path='carddata/:id' element={<Carddata />} />
+        <Route path='cdetail/:id' element={<Cdetail />} />
       </Route>
     )
   )

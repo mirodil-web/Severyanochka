@@ -36,7 +36,7 @@ const Novinki = () => {
                     <div className="container">
 
                         {/* title */}
-                        <div className='flex justify-between '>
+                        <div className='flex justify-between mb-10'>
                             <h2 className='text-4xl  font-bold text-qorag'>Новинки</h2>
                             <button className='p-2'>
                                 Все новинки
@@ -45,7 +45,7 @@ const Novinki = () => {
                         </div>
 
                         {/* Card wrapper */}
-                        <Swiper className='py-10  px-2'
+                        <Swiper className='py-2  px-2'
                             spaceBetween={40}
                             slidesPerView={4}
                             autoplay={{
@@ -61,7 +61,7 @@ const Novinki = () => {
                             {novinkidata.map((novinkidata) => {
                                 return (
 
-                                    <SwiperSlide key={novinkidata.id} className='bg-white shadow-md rounded-nor '>
+                                    <SwiperSlide key={novinkidata.id} className='bg-white shadow-md rounded-nor pt-4'>
                                         <div className='relative'>
                                             <button onClick={() => qoshish(novinkidata.id)} className={`shadow-lg absolute rounded-full right-2 p-2 ${like ? 'bg-red-400' : 'bg-slate-200/50'}
                                  rounded-full duration-500`}>

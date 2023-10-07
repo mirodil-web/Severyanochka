@@ -10,6 +10,8 @@ export default {
       'minm': '360px',
 
       'sm': '640px',
+
+      'md': '768px',
       // => @media (min-width: 640px) { ... }
 
       'lg': '1024px',

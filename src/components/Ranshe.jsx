@@ -11,26 +11,27 @@ const Ranshe = () => {
     const [cardLike, setCardLike] = useState([])
 
     const addLike = (i) => {
-        const found = cardLike.find((e) => e.id === i)
+        const found = cardLike.find((e) => e.id === i);
+        if (!found) {
+            setCardLike([...cardLike, { id: i }]);
+        }
     };
+
 
     const removeLike = (i) => {
         const updatedShop = cardLike.filter((e) => e.id !== i);
         setCardLike(updatedShop);
-
-    }
-        ;
+    };
 
 
     const qoshish = (e) => {
-        setLike(!like)
+        setLike(!like);
         if (!like) {
-            addLike(e)
+            addLike(e);
+        } else {
+            removeLike(e);
         }
-        else {
-            removeLike(e)
-        }
-    }
+    };
 
 
 
@@ -49,7 +50,7 @@ const Ranshe = () => {
                     </div>
 
                     {/* Card wrapper */}
-                    <Swiper className=' py-10 px-2'
+                    <Swiper className=' py-2 px-2'
                         spaceBetween={40}
                         slidesPerView={4}
                         autoplay={{
@@ -64,7 +65,7 @@ const Ranshe = () => {
 
                         {ranshedata.map((ranshedata) => {
                             return (
-                                <SwiperSlide key={ranshedata.id} className='bg-white shadow-md rounded-nor '>
+                                <SwiperSlide key={ranshedata.id} className='bg-white shadow-md rounded-nor pt-4'>
                                     <div className='relative'>
                                         <button onClick={() => qoshish(ranshedata.id)} className={`shadow-lg absolute right-2 p-2 ${like ? 'bg-red-500' : 'bg-slate-200/50'}
                                  rounded-full duration-500`}>

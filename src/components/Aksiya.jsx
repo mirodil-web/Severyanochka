@@ -23,7 +23,7 @@ const Aksiya = () => {
             <div className="container">
                 {/* title */}
                 <div className='flex justify-between mb-10'>
-                    <h2 className='text-4xl  font-bold text-qorag'>Покупали раньше</h2>
+                    <h2 className='text-4xl  font-bold text-qorag'>Акции</h2>
                     <button className='p-2'>
                         Все покупки
                         <span className='ml-5'>≽</span>
@@ -31,7 +31,7 @@ const Aksiya = () => {
                 </div>
                 
                 <Swiper
-                    className='py-10 px-2 grid grid-cols-4 '
+                    className='py-2 px-2 grid grid-cols-4 '
                     slidesPerView={2}
                     spaceBetween={40}
                     autoplay={{
@@ -57,7 +57,7 @@ const Aksiya = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                 >
                     {acsiyadata.map((acsiyadata) => (
-                        <SwiperSlide key={acsiyadata.id} className='bg-white shadow-md relative '>
+                        <SwiperSlide key={acsiyadata.id} className='bg-white shadow-md relative rounded-nor '>
                             <Setlike acsiyadata={acsiyadata} like={badge === acsiyadata.id} qoshish={like} />
                         </SwiperSlide>
                     ))}

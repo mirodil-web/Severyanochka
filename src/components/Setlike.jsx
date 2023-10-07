@@ -11,7 +11,7 @@ const Setlike = ({ acsiyadata }) => {
 
     return (
         <div>
-            <div className='p-2 relative'>
+            <div className='p-2 relative rounded-nor'>
                 <button onClick={toggleLike} className={`duration-500 shadow-lg absolute right-2 p-2 ${like ? 'bg-red-400 p-2' : 'bg-slate-200/50'} rounded-full`}>
                     <img width={22} className='rounded-lg' height={22} src={Heart} alt="Heart icon" />
                 </button>
