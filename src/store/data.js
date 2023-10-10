@@ -1,3 +1,7 @@
+
+import inson from '../../public/assets/people.png'
+
+
 export const acsiyadata = [
     {
         id: 1,
@@ -195,7 +199,7 @@ export const ranshedata = [
 export const ctataidata = [
     {
         id: 1,
-        img: '/public/assets/people.png',
+        img: inson,
         title: 'Режим использования масок и перчаток на территории магазинов',
         paragraf: 'Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.',
         span:'05.03.2021'

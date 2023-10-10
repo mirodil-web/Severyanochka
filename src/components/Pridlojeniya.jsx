@@ -5,7 +5,7 @@ import BbImg from '../../public/assets/bgimgx.png'
 
 const Pridlojeniya = () => {
     return (
-        <section className='py-14'>
+        <section className='py-14 bg-[#FBF8EC]'>
             <div className="container">
                 <h2 className='font-bold text-4xl mb-10'>Специальные предложения</h2>
 

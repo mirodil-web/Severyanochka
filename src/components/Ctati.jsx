@@ -1,7 +1,4 @@
 import React from 'react'
-import odam from '../../public/assets/people.png'
-import bahor from '../../public/assets/bahor.png'
-import food from '../../public/assets/food.png'
 import { ctataidata } from '../store/data'
 import { Link } from 'react-router-dom'
 
@@ -9,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Ctati = () => {
 
     return (
-        <section className='py-14 '>
+        <section className='py-14 bg-[#FBF8EC] '>
             <div className="container">
 
                 {/* title */}
