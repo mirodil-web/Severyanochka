@@ -233,13 +233,15 @@ const Carddata = () => {
       </section>
 
 
-      <section>
+      <section className='py-14'>
         <div className="container">
-          <h2 className='text-qorag font-bold text-4xl'>Отзывы</h2>
+          <h2 className='text-qorag font-bold text-4xl mb-10'>Отзывы</h2>
+          <hr />
 
-          <div>
-            <h3>Ваша оценка</h3>
-            <textarea cols="30" rows="10"></textarea>
+          <div className='py-5'> 
+            <h3 className='font-bold text-qorag text-lg mb-4'>Ваша оценка</h3>
+            <textarea cols="30" rows="7" className='border px-4 py-2 rounded-nor mb-4 w-full' placeholder='Отзыв'></textarea>
+            <button className='p-2 text-[#FF6633] bg-[#FCD5BA]'>Отправить отзыв</button>
           </div>
         </div>
       </section>

@@ -22,7 +22,8 @@ const Katalog = () => {
         <div className='grid grid-cols-2 minm:grid-cols-3  md:grid-cols-4 pb-20 gap-10'>
 
             {/* card1 */}
-          <Link to='/' className='rounded-nor h-[200px] relative bg-molokoSir bg-no-repeat bg-center  col-span-2 '>
+          <Link to='/' className='rounded-nor  relative bg-molokoSir bg-no-repeat bg-center  col-span-2 '>
+            <img src="../../public/assets/moloko,sir.png" alt="" />
             <div className='pt-20 pl-2.5 pb-2 absolute text-white   font-bold text-lg bg-gradient-to-t from-[#70C05B] rounded-nor   w-full bottom-0'>
               <h3 >Молоко, сыр, яйцо</h3>
             </div>

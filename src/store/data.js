@@ -216,3 +216,10 @@ export const ctataidata = [
     }
 ]
 
+export const katalogdata = [
+    {
+        id: 1,
+
+    },
+]
+

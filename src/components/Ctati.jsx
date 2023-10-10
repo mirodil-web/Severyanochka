@@ -21,7 +21,7 @@ const Ctati = () => {
                     </button>
                 </div>
 
-                <ul className='grid grid-cols-3 gap-10'>
+                <ul className='grid grid-cols-1 md:grid-cols-3 gap-10'>
 
                     {
                         ctataidata.map((ctataidata) => {

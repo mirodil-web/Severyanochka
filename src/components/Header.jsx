@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Badge } from 'antd';
-import { createRoot } from "react-dom/client";
 import { Link } from 'react-router-dom';
 import Logo from '../../public/assets/logo.svg'
 import Menu from '../../public/assets/icons.png'
@@ -8,21 +7,19 @@ import Search from '../../public/assets/search-interface-symbol.png'
 import Heart from '../../public/assets/heart.png'
 import Kub from '../../public/assets/kub.svg'
 import Shop from '../../public/assets/shopping-cart.png'
-import Avatarx from '../../public/assets/avatar.svg'
 import Buttonx from '../../public/assets/Button.svg'
 import Exit from '../../public/assets/Exit.svg'
+import Logopro from '../../public/assets/logox.svg'
+import Hamburger from '../../public/assets/icons8-hamburger-menu-48.png'
 
 
-const Header = ({cardLike}) => {
+const Header = ({ cardLike }) => {
 
     const [badge, setBadge] = useState(5)
     const [open, setOpen] = useState(false)
 
 
-    const [katalog, setKatalog] = useState(false)
-
-   
-
+    const [resNav, setResNav] = useState(false)
 
 
     return (
@@ -34,14 +31,15 @@ const Header = ({cardLike}) => {
                 <div className=' container flex justify-between items-center'>
 
                     {/* header logo */}
-                    <Link to="/" className='hidden xl:block'>
-                        <img className='' width={152} height={32} src={Logo} alt="logo img" />
+                    <Link to="/" className=''>
+                        <img className='inline-block xl:hidden' src={Logopro} alt="logo" />
+                        <img className='hidden xl:block' width={152} height={32} src={Logo} alt="logo img" />
                     </Link>
 
                     {/* katalog block  div */}
                     <div className='flex items-center'>
 
-                        <Link to='/katalog' className='rounded-nor bg-Yashil flex text-white p-2 space-x-2 mr-4'>
+                        <Link to='/katalog' className='hidden lg:inline-block rounded-nor bg-Yashil  text-white p-2 space-x-2 mr-4'>
                             <span className='text-base font-normal'> Каталог</span>
                         </Link>
 
@@ -50,7 +48,7 @@ const Header = ({cardLike}) => {
 
                         </div>
                         }
-                        {open && <div className='app min-h-screen flex fixed bg-[#FCD5BACC] bottom-0 left-0 h-full w-full justify-center items-center z-10'>
+                        {open && <div className='app min-h-screen flex shadow fixed bg-[#FCD5BACC] bottom-0 left-0 h-full w-full justify-center items-center z-10'>
                             <div className='bg-white rounded-nor text-center px-20 pt-16 pb-10   relative z-20'>
                                 <img src={Exit} onClick={() => setOpen(false)} className='cursor-pointer mb-8 absolute right-0 top-0' alt="Exit" />
                                 <h3 className='text-2xl font-bold mb-8'>Вход</h3>
@@ -71,8 +69,9 @@ const Header = ({cardLike}) => {
                         </div>
                         }
 
+                        {/* w-[100px] minm:w-[280px] md:w-[450px] xl:w-[560px] lg:w-[500px]  */}
                         <div className='relative'>
-                            <input className='w-[200px] md:w-[350px] lg:w-[550px] p-2 border border-Yashil rounded-nor  ' type="search" placeholder='Найти товар' />
+                            <input className='p-2 border border-Yashil rounded-nor w-full  ' type="search" placeholder='Найти товар' />
                             <img width={22} height={22} className='absolute right-2 top-2 bg-white' src={Search} alt="Search img" />
                         </div>
                     </div>
@@ -80,7 +79,7 @@ const Header = ({cardLike}) => {
                     {/* block div */}
                     <div className="flex items-center space-x-7">
 
-                        <Link to='izbrozenoe'>
+                        <Link className='hidden lg:inline-block' to='izbrozenoe'>
                             <Badge count={`${1}`}>
                                 <button className='flex flex-col justify-center items-center'>
                                     <img className='mb-2' src={Heart} width={24} height={24} alt="heart img" />
@@ -89,7 +88,7 @@ const Header = ({cardLike}) => {
                             </Badge>
                         </Link>
 
-                        <Link to='korzina'>
+                        <Link className='hidden lg:inline-block' to='korzina'>
                             <Badge count={badge}>
                                 <button className='flex flex-col justify-center items-center'>
                                     <img className='mb-2' src={Shop} width={24} height={24} alt="heart img" />
@@ -101,11 +100,54 @@ const Header = ({cardLike}) => {
 
                     </div>
 
-                    <button onClick={() => setOpen(true)} className=' hover:shadow-xl px-5 py-1 shadow-Yashil shadow-sm rounded-nor hover:bg-Yashil/50  border'>
+                    <button onClick={() => setOpen(true)} className=' hidden lg:block hover:shadow-xl px-5 py-1 shadow-Yashil shadow-sm rounded-nor hover:bg-Yashil/50  border'>
                         <span className='font-bold'>Вход </span>
                     </button>
 
+                    <button onClick={() => setResNav(true)} className='lg:hidden block'>
+                        <img src={Hamburger} width={40} alt="hamburger img" />
+                    </button>
+
                 </div>
+
+                {/* responsive nav */}
+                {resNav && <div className="w-full left-0 top-0  h-full fixed bg-blue-950/50 backdrop-blur-sm block lg:hidden">
+                    <div className='w-[60%] h-full   bg-yellow-300 p-7  lg:items-center '>
+                        <span onClick={() => setResNav(false)} className='absolute right-10 top-7 text-xl shadow rounded-full  p-1 px-2.5 shadow-yellow-500 text-blue-200'>⨉</span>
+                        <div className="flex flex-col ">
+                            <div className="flex justify-center">
+                                <img className='mb-5' width={152} height={32} src={Logo} alt="logo img" />
+                            </div>
+                            <hr className='mb-10' />
+                            <div className="flex justify-between mb-10">
+                                <Link onClick={() => setResNav(false)} className='mr-7' to='izbrozenoe'>
+                                    <Badge count={`${0}`}>
+                                        <button className='flex flex-col justify-center items-center'>
+                                            <img className='mb-2' src={Heart} width={24} height={24} alt="heart img" />
+                                            <span>Избранное</span>
+                                        </button>
+                                    </Badge>
+                                </Link>
+                                <Link onClick={() => setResNav(false)} className='' to='korzina'>
+                                    <Badge count={badge}>
+                                        <button className='flex flex-col justify-center items-center'>
+                                            <img className='mb-2' src={Shop} width={24} height={24} alt="heart img" />
+                                            <span>Корзина</span>
+                                        </button>
+                                    </Badge>
+                                </Link>
+                            </div>
+                            <div className="flex justify-center">
+                                <button onClick={() => setOpen(true)} className=' hover:shadow-xl px-5 py-2 bg-Yashil shadow-cyan-600 shadow-sm rounded-nor hover:bg-Yashil/50  border'>
+                                    <span className='font-bold'>Вход </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                }
             </header>
 
         </>
