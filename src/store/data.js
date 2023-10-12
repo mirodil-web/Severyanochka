@@ -1,11 +1,18 @@
 
 import inson from '../../public/assets/people.png'
+import bahor from '../../public/assets/bahor.png'
+import food from '../../public/assets/food.png'
+import cardimg1 from '../../public/assets/card-img1.png'
+import milk from '../../public/assets/milk.png'
+import kolbasapaket from '../../public/assets/kolbasapaket.png'
+import sosiska from '../../public/assets/sosiska.png'
+import kolbasa from '../../public/assets/kolbasa.png'
 
 
 export const acsiyadata = [
     {
         id: 1,
-        img: '../../public/assets/card-img1.png',
+        img: cardimg1,
         chegirma: '- 50%',
         price: '44,50 ₽',
         price2: '50,50 ₽',
@@ -14,7 +21,7 @@ export const acsiyadata = [
     },
     {
         id: 2,
-        img: '../../public/assets/milk.png',
+        img: milk,
         chegirma: ' - 50%',
         price: '44,50 ₽',
         price2: '50,50 ₽',
@@ -23,7 +30,7 @@ export const acsiyadata = [
     },
     {
         id: 3,
-        img: '../../public/assets/kolbasapaket.png',
+        img: kolbasapaket,
         chegirma: ' - 50%',
         price: '44,50 ₽',
         price2: '50,50 ₽',
@@ -32,7 +39,7 @@ export const acsiyadata = [
     },
     {
         id: 4,
-        img: '../../public/assets/sosiska.png',
+        img: sosiska,
         chegirma: ' - 50%',
         price: '44,50 ₽',
         price2: '50,50 ₽',
@@ -41,7 +48,7 @@ export const acsiyadata = [
     },
     {
         id: 5,
-        img: '../../public/assets/card-img1.png',
+        img: cardimg1,
         chegirma: ' - 50%',
         price: '44,50 ₽',
         price2: '50,50 ₽',
@@ -51,7 +58,7 @@ export const acsiyadata = [
     },
     {
         id: 6,
-        img: '../../public/assets/milk.png',
+        img: milk,
         chegirma: ' - 50%',
         price: '44,50 ₽',
         price2: '50,50 ₽',
@@ -60,7 +67,7 @@ export const acsiyadata = [
     },
     {
         id: 7,
-        img: '../../public/assets/kolbasapaket.png',
+        img: kolbasapaket,
         chegirma: ' - 50%',
         price: '44,50 ₽',
         price2: '50,50 ₽',
@@ -69,7 +76,7 @@ export const acsiyadata = [
     },
     {
         id: 8,
-        img: '../../public/assets/sosiska.png',
+        img: sosiska,
         chegirma: ' - 50%',
         price: '44,50 ₽',
         price2: '50,50 ₽',
@@ -81,56 +88,56 @@ export const acsiyadata = [
 export const novinkidata = [
     {
         id: 1,
-        img: '../../public/assets/kolbasa.png',
+        img: kolbasa,
         price: '599,99 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
         id: 2,
-        img: '../../public/assets/kolbasapaket.png',
+        img: kolbasapaket,
         price: '44,50 ₽',
         name: 'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
         button: 'В корзину'
     },
     {
         id: 3,
-        img: '../../public/assets/sosiska.png',
+        img: sosiska,
         price: '159,99 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
         id: 4,
-        img: '../../public/assets/milk.png',
+        img: milk,
         price: '49,39 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
         id: 5,
-        img: '../../public/assets/kolbasa.png',
+        img: kolbasa,
         price: '599,99 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
         id: 6,
-        img: '../../public/assets/kolbasapaket.png',
+        img: kolbasapaket,
         price: '44,50 ₽',
         name: 'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
         button: 'В корзину'
     },
     {
         id: 7,
-        img: '../../public/assets/sosiska.png',
+        img: sosiska,
         price: '159,99 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
         id: 8,
-        img: '../../public/assets/milk.png',
+        img: milk,
         price: '49,39 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
@@ -140,56 +147,56 @@ export const novinkidata = [
 export const ranshedata = [
     {
         id: 1,
-        img: '../../public/assets/kolbasapaket.png',
+        img: kolbasapaket,
         price: '77,99 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
         id: 2,
-        img: '../../public/assets/sosiska.png',
+        img: sosiska,
         price: '159,99 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
         id: 3,
-        img: '../../public/assets/kolbasa.png',
+        img: kolbasa,
         price: '599,99 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
         id: 4,
-        img: '../../public/assets/milk.png',
+        img: milk,
         price: '49,39 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
         id: 5,
-        img: '../../public/assets/kolbasapaket.png',
+        img: kolbasapaket,
         price: '77,99 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
         id: 6,
-        img: '../../public/assets/sosiska.png',
+        img: sosiska,
         price: '159,99 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
         id: 7,
-        img: '../../public/assets/kolbasa.png',
+        img: kolbasa,
         price: '599,99 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
         id: 8,
-        img: '../../public/assets/milk.png',
+        img: milk,
         price: '49,39 ₽',
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
@@ -206,14 +213,14 @@ export const ctataidata = [
     },
       {
         id: 2,
-        img: '/public/assets/bahor.png',
+        img: bahor,
           title: 'Весеннее настроение для каждой',
           paragraf: '8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.',
           span: '05.03.2021'
     },
         {
         id: 3,
-        img: '/public/assets/food.png',
+        img: food,
             title: 'ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!',
             paragraf: 'Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле! кешбэк 10% баллами в апреле!',
             span: '22.02.2020'

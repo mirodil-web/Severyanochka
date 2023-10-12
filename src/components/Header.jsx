@@ -69,9 +69,9 @@ const Header = ({ cardLike }) => {
                         </div>
                         }
 
-                        {/* w-[100px] minm:w-[280px] md:w-[450px] xl:w-[560px] lg:w-[500px]  */}
+                        
                         <div className='relative'>
-                            <input className='p-2 border border-Yashil rounded-nor w-full  ' type="search" placeholder='Найти товар' />
+                            <input className='p-2 border border-Yashil rounded-nor  w-[100px] minm:w-[280px] md:w-[450px] xl:w-[560px] lg:w-[500px] ' type="search" placeholder='Найти товар' />
                             <img width={22} height={22} className='absolute right-2 top-2 bg-white' src={Search} alt="Search img" />
                         </div>
                     </div>

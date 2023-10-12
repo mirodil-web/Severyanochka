@@ -9,8 +9,7 @@ const Aksiya = () => {
     const [badge, setBadge] = useState();
 
     const like = (acsiyaId) => {
-        // Like tugmasi bosilganda ishlatiladigan logika
-        // Misol uchun:
+        
         if (badge === acsiyaId) {
             setBadge(null); // Agar shu aksiya nomidan like olib tashlansa, uni bekor qilamiz
         } else {
@@ -35,8 +34,9 @@ const Aksiya = () => {
                     slidesPerView={2}
                     spaceBetween={40}
                     autoplay={{
-                        "delay": 500,
-                        "disableOnInteraction": false
+                        delay: 500,
+                        disableOnInteraction: false,
+                        
                     }}
                     breakpoints={{
                         640: {
