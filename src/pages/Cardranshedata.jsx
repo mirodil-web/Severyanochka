@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
-import { acsiyadata, ranshedata } from '../store/data'
+import { ranshedata } from '../store/data' 
+import { useParams, Link } from 'react-router-dom'
 import { Breadcrumbs } from '@material-tailwind/react'
 import Korzina from '../../public/assets/shopping-cart.png'
 import Heart from '../../public/assets/heart.png'
 // import Swiper from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-
-const Carddata = () => {
+const Cardranshedata = () => {
 
   const { id } = useParams()
 
-  const data = acsiyadata.find(e => e.id === parseInt(id))
+  const data = ranshedata.find(e => e.id === parseInt(id))
+
 
   const [like, setLike] = useState(false)
   const [cardLike, setCardLike] = useState([])
@@ -34,7 +34,7 @@ const Carddata = () => {
   const qoshish = (e) => {
     setLike(!like);
     if (!like) {
-      addLike(e); 
+      addLike(e);
     } else {
       removeLike(e);
     }
@@ -106,10 +106,6 @@ const Carddata = () => {
           </ul>
 
           <div className='mr-10 bg-white rounded-nor pt-10 px-10 flex flex-col  shadow-md'>
-            <div className='flex justify-end'>
-              <span className='bg-olov text-right rounded-nor px-2 py-1 mb-10 text-white text-base'>{data.chegirma}</span>
-
-            </div>
             <img src={data.img} width={504} height={496} alt="img" />
           </div>
 
@@ -238,7 +234,7 @@ const Carddata = () => {
           <h2 className='text-qorag font-bold text-4xl mb-10'>Отзывы</h2>
           <hr />
 
-          <div className='py-5'> 
+          <div className='py-5'>
             <h3 className='font-bold text-qorag text-lg mb-4'>Ваша оценка</h3>
             <textarea cols="30" rows="7" className='border px-4 py-2 border-yellow-500/50 rounded-nor mb-4 w-full' placeholder='Отзыв'></textarea>
             <button className='p-2 text-[#FF6633] bg-[#FCD5BA]'>Отправить отзыв</button>
@@ -250,4 +246,4 @@ const Carddata = () => {
   )
 }
 
-export default Carddata
+export default Cardranshedata

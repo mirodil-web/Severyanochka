@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import { novinkidata } from '../store/data'
+import { Link } from 'react-router-dom';
 
 const Novinki = () => {
     const [like, setLike] = useState(false)
@@ -47,10 +48,24 @@ const Novinki = () => {
                         {/* Card wrapper */}
                         <Swiper className='py-2  px-2'
                             spaceBetween={40}
-                            slidesPerView={4}
+                            slidesPerView={1}
                             autoplay={{
                                 "delay": 2500,
                                 "disableOnInteraction": false
+                            }}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 40,
+                                },
+                                1024: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 40,
+                                },
                             }}
                             loop={true}
 
@@ -67,7 +82,10 @@ const Novinki = () => {
                                  rounded-full duration-500`}>
                                                 <img width={22} className=' rounded-lg ' height={22} src={Heart} alt="Heart icon" />
                                             </button>
+                                            <Link to={`/novinkidata/${novinkidata.id}`}>
                                             <img width={272} height={160} className='mx-auto' src={novinkidata.img} alt="Card img" />
+                                            
+                                            </Link>
                                         </div>
                                         <div className='p-2 space-y-2'>
 

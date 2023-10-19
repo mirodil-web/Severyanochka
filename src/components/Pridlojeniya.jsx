@@ -9,7 +9,7 @@ const Pridlojeniya = () => {
             <div className="container">
                 <h2 className='font-bold text-4xl mb-10'>Специальные предложения</h2>
 
-                <div className='grid grid-cols-2 gap-10'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
 
                     {/* card 1 */}
                     <div className='rounded-nor bg-pinkx flex'>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Heart from '../../public/assets/heart.png'
-import PaketKolbasa2 from '../../public/assets/kolbasapaket2.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ranshedata } from '../store/data'
+import {Link, useParams} from 'react-router-dom'
 
 
 const Ranshe = () => {
@@ -52,10 +52,24 @@ const Ranshe = () => {
                     {/* Card wrapper */}
                     <Swiper className=' py-2 px-2'
                         spaceBetween={40}
-                        slidesPerView={4}
+                        slidesPerView={1}
                         autoplay={{
                             "delay": 500,
                             "disableOnInteraction": false
+                        }}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 40,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 40,
+                            },
                         }}
                         loop={true}
 
@@ -71,7 +85,12 @@ const Ranshe = () => {
                                  rounded-full duration-500`}>
                                             <img width={22} className='  p-0.5' height={22} src={Heart} alt="Heart icon" />
                                         </button>
-                                        <img width={272} height={160} className='mx-auto' src={ranshedata.img} alt="Card img" />
+
+                                        <Link to={`/ranshedata/${ranshedata.id}`}>
+                                            <img width={272} height={160} className='mx-auto' src={ranshedata.img} alt="Card img" />
+
+                                        </Link>
+
                                     </div>
                                     <div className='p-2 space-y-2'>
 

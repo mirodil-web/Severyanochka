@@ -5,7 +5,7 @@ import 'swiper/css';
 import { acsiyadata } from '../store/data';
 import Setlike from './Setlike';
 
-const Aksiya = () => {
+const Aksiya = ({ addLike, removeLike, setCardLike}) => {
     const [badge, setBadge] = useState();
 
     const like = (acsiyaId) => {
@@ -31,7 +31,7 @@ const Aksiya = () => {
                 
                 <Swiper
                     className='py-2 px-2 grid grid-cols-4 '
-                    slidesPerView={2}
+                    slidesPerView={1}
                     spaceBetween={40}
                     autoplay={{
                         delay: 500,
@@ -58,7 +58,7 @@ const Aksiya = () => {
                 >
                     {acsiyadata.map((acsiyadata) => (
                         <SwiperSlide key={acsiyadata.id} className='bg-white shadow-md relative rounded-nor '>
-                            <Setlike acsiyadata={acsiyadata} like={badge === acsiyadata.id} qoshish={like} />
+                            <Setlike acsiyadata={acsiyadata} addLike={addLike} removeLike={removeLike} setCardLike={setCardLike} like={badge === acsiyadata.id} />
                         </SwiperSlide>
                     ))}
                 </Swiper>

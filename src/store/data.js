@@ -8,6 +8,21 @@ import kolbasapaket from '../../public/assets/kolbasapaket.png'
 import sosiska from '../../public/assets/sosiska.png'
 import kolbasa from '../../public/assets/kolbasa.png'
 
+// katalog img
+import molakaosir from '../../public/assets/moloko,sir.png'
+import bread from '../../public/assets/xleb.png'
+import fruict from '../../public/assets/fruits.png'
+import productz from '../../public/assets/muzlatilgan.png'
+import napitki from '../../public/assets/ichimliklar.png'
+import izdeliya from '../../public/assets/izdeliya.png'
+import chaycofe from '../../public/assets/teaandcofee.png'
+import bakaleya from '../../public/assets/bakaleya.png'
+import pitaine from '../../public/assets/pitanie.png'
+import zatovariy from '../../public/assets/zatovariy.png'
+import baby from '../../public/assets/baby.png'
+import kolbasabek from '../../public/assets/kolbasaforkatalog.png'
+
+
 
 export const acsiyadata = [
     {
@@ -230,7 +245,70 @@ export const ctataidata = [
 export const katalogdata = [
     {
         id: 1,
-
+        img: molakaosir,
+        ptitle: "Молоко, сыр, яйцо",
     },
+    {
+        id: 2,
+        img: bread,
+        ptitle: "Хлеб",
+
+        
+    },
+    {
+        id: 3,
+        img: fruict,
+        ptitle: "Фрукты и овощи",
+    },
+    {
+        id: 4,
+        img: productz,
+        ptitle: "Замороженные продукты",
+    },
+    {
+        id: 5,
+        img: napitki,
+        ptitle: "Напитки",
+    },
+    {
+        id: 6,
+        img: izdeliya,
+        ptitle: "Кондитерские изделия",
+    },
+    {
+        id: 7,
+        img: chaycofe,
+        ptitle: "Чай, кофе",
+    },
+    {
+        id: 8,
+        img: bakaleya,
+        ptitle: "Бакалея",
+    },
+    {
+        id: 9,
+        img: pitaine,
+        ptitle: "Здоровое питание",
+    },
+    {
+        id: 10,
+        img: zatovariy,
+        ptitle: "Зоотовары",
+    },
+    {
+        id: 11,
+        img: baby,
+        ptitle: "Детское питание",
+    },
+    {
+        id: 12,
+        img: kolbasabek,
+        ptitle: "Мясо, птица, колбаса",
+    },
+   
+    
 ]
+
+
+
 

@@ -2,17 +2,24 @@ import React, { useState } from 'react';
 import Heart from '../../public/assets/heart.png';
 import { Link } from 'react-router-dom';
 
-const Setlike = ({ acsiyadata }) => {
+const Setlike = ({ acsiyadata, addLike, removeLike, setCardLike } ) => {
     const [like, setLike] = useState(false); // "like" o'zgaruvchisi va uning o'zgarish funksiyasi
 
-    const toggleLike = () => {
-        setLike(!like); // "like" o'zgaruvchisini o'zgartirish
+    const toggleLike = (id) => {
+        setLike(!like);
+        // "like" o'zgaruvchisini o'zgartirish
+        if (like) {
+            addLike(id)
+        }
+        else {
+            removeLike(id)
+        }
     };
 
     return (
         <div>
             <div className='p-2 relative rounded-nor'>
-                <button onClick={toggleLike} className={`duration-500 shadow-lg absolute right-2 p-2 ${like ? 'bg-red-400 p-2' : 'bg-slate-200/50'} rounded-full`}>
+                <button onClick={()=> toggleLike(acsiyadata.id)} className={`duration-500 shadow-lg absolute right-2 p-2 ${like ? 'bg-red-400 p-2' : 'bg-slate-200/50'} rounded-full`}>
                     <img width={22} className='rounded-lg' height={22} src={Heart} alt="Heart icon" />
                 </button>
                 <Link to={`/carddata/${acsiyadata.id}`}>
