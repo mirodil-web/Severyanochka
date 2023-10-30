@@ -53,6 +53,8 @@ export default {
         'baby': "url('/public/assets/baby.png')",
         'Kolbasakatalog': "url('/public/assets/kolbasaforkatalog.png\')",
         'xost': "url('/public/assets/xostavariy.png')",
+        'pcardimg': "url('/public/assets/Karta.png')",
+        'pcardimg2': "url('/public/assets/bgimgx.png')",
       },
       boxShadow: {
         'katalogshadow': '10px 10px 10px 10px rgb(112, 192, 91)'

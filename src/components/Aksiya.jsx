@@ -5,9 +5,8 @@ import 'swiper/css';
 import { acsiyadata } from '../store/data';
 import Setlike from './Setlike';
 
-const Aksiya = ({ addLike, removeLike, setCardLike}) => {
+const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
     const [badge, setBadge] = useState();
-
     const like = (acsiyaId) => {
         
         if (badge === acsiyaId) {
@@ -21,12 +20,12 @@ const Aksiya = ({ addLike, removeLike, setCardLike}) => {
         <section className='pt-20 pb-14 bg-[#FBF8EC]'>
             <div className="container">
                 {/* title */}
-                <div className='flex justify-between mb-10'>
-                    <h2 className='text-4xl  font-bold text-qorag'>Акции</h2>
-                    <button className='p-2'>
+                <div className='flex justify-between items-center mb-10'>
+                    <h2 className='md:text-4xl text-2xl  font-bold text-qorag'>Акции </h2>
+                    <Link to='vseaksi' className='p-2'>
                         Все покупки
                         <span className='ml-5'>≽</span>
-                    </button>
+                    </Link>
                 </div>
                 
                 <Swiper
@@ -58,7 +57,7 @@ const Aksiya = ({ addLike, removeLike, setCardLike}) => {
                 >
                     {acsiyadata.map((acsiyadata) => (
                         <SwiperSlide key={acsiyadata.id} className='bg-white shadow-md relative rounded-nor '>
-                            <Setlike acsiyadata={acsiyadata} addLike={addLike} removeLike={removeLike} setCardLike={setCardLike} like={badge === acsiyadata.id} />
+                            <Setlike acsiyadata={acsiyadata} addKorzina={addKorzina} addLike={addLike} removeLike={removeLike} like={badge === acsiyadata.id} />
                         </SwiperSlide>
                     ))}
                 </Swiper>

@@ -42,7 +42,7 @@ const Ranshe = () => {
 
                     {/* title */}
                     <div className='flex justify-between mb-10'>
-                        <h2 className='text-4xl  font-bold text-qorag'>Покупали раньше</h2>
+                        <h2 className='text-2xl md:text-4xl  font-bold text-qorag'>Покупали раньше</h2>
                         <button className='p-2'>
                             Все покупки
                             <span className='ml-5'>≽</span>

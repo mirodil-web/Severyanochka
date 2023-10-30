@@ -22,6 +22,18 @@ import zatovariy from '../../public/assets/zatovariy.png'
 import baby from '../../public/assets/baby.png'
 import kolbasabek from '../../public/assets/kolbasaforkatalog.png'
 
+// katalog data img
+
+import Bread1 from '../../public/breads/bread1.png'
+import Bread2 from '../../public/breads/bread2.webp'
+import Bread3 from '../../public/breads/bread3.png'
+import Bread4 from '../../public/breads/bread4.png'
+import Bread5 from '../../public/breads/bread5.png'
+import Bread6 from '../../public/breads/bread6.png'
+import Bread7 from '../../public/breads/bread7.png'
+import Bread8 from '../../public/breads/bread8.png'
+
+
 
 
 export const acsiyadata = [
@@ -252,7 +264,14 @@ export const katalogdata = [
         id: 2,
         img: bread,
         ptitle: "Хлеб",
-
+        cardimgr1: Bread1,
+        cardimgr2: Bread2,
+        cardimgr3: Bread3,
+        cardimgr4: Bread4,
+        cardimgr5: Bread5,
+        cardimgr6: Bread6,
+        cardimgr7: Bread7,
+        cardimgr8: Bread8,
         
     },
     {

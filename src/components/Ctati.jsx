@@ -11,7 +11,7 @@ const Ctati = () => {
 
                 {/* title */}
                 <div className='flex justify-between mb-10'>
-                    <h2 className='text-4xl  font-bold text-qorag'>Статьи</h2>
+                    <h2 className='text-2xl md:text-4xl  font-bold text-qorag'>Статьи</h2>
                     <button className='p-2'>
                         Все cтатьи
                         <span className='ml-5'>≽</span>
@@ -31,8 +31,10 @@ const Ctati = () => {
                                         <h3 className='font-bold text-lg mb-2.5'>{ ctataidata.title}</h3>
                                         <p className='font-normal max-h-[120px] h-full  text-[#414141] mb-2.5'>{ctataidata.paragraf}</p>
                                         
-                                        <div className="py-5">
-                                            <Link to={`cdetail/${ctataidata.id}`} className='absolute bottom-2.5 left-2.5 p-2 text-[#70C05B] rounded-nor bg-[#e5e5e5] hover:bg-Yashil hover:text-white duration-500'>Подробнее</Link>
+                                        <div className="flex items-end ">
+                                            <div>
+                                                <Link to={`cdetail/${ctataidata.id}`} className=' p-2 text-[#70C05B] rounded-nor bg-[#e5e5e5] hover:bg-Yashil hover:text-white duration-500'>Подробнее</Link>
+                                            </div>
                                         </div>
 
                                     </div>

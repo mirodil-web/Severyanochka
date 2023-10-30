@@ -38,7 +38,7 @@ const Novinki = () => {
 
                         {/* title */}
                         <div className='flex justify-between mb-10'>
-                            <h2 className='text-4xl  font-bold text-qorag'>Новинки</h2>
+                            <h2 className='md:text-4xl text-2xl  font-bold text-qorag'>Новинки</h2>
                             <button className='p-2'>
                                 Все новинки
                                 <span className='ml-5'>≽</span>

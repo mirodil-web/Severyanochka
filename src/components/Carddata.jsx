@@ -34,7 +34,7 @@ const Carddata = () => {
   const qoshish = (e) => {
     setLike(!like);
     if (!like) {
-      addLike(e); 
+      addLike(e);
     } else {
       removeLike(e);
     }
@@ -85,35 +85,37 @@ const Carddata = () => {
 
         </div>
 
-        <div className='flex justify-between pb-14'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 pb-14'>
+          <div className='flex mb-10 sm:mb-0'>
 
-          <ul className='mr-4 space-y-4'>
-            <li className='rounded-nor shadow-md py-4 bg-white px-2' >
-              <img src={data.img} width={86} height={64} alt="Img" />
-            </li>
-            <li className='rounded-nor shadow-md py-4 bg-white px-2'>
-              <img src={data.img} width={86} height={64} alt="Img" />
-            </li>
-            <li className='rounded-nor shadow-md py-4 bg-white px-2'>
-              <img src={data.img} width={86} height={64} alt="Img" />
-            </li>
-            <li className='rounded-nor shadow-md py-4 bg-white px-2'>
-              <img src={data.img} width={86} height={64} alt="Img" />
-            </li>
-            <li className='rounded-nor shadow-md py-4 bg-white px-2'>
-              <img src={data.img} width={86} height={64} alt="Img" />
-            </li>
-          </ul>
+            <ul className='mr-4 space-y-4'>
+              <li className='rounded-nor shadow-md py-4 bg-white px-2' >
+                <img src={data.img} width={86} height={64} alt="Img" />
+              </li>
+              <li className='rounded-nor shadow-md py-4 bg-white px-2'>
+                <img src={data.img} width={86} height={64} alt="Img" />
+              </li>
+              <li className='rounded-nor shadow-md py-4 bg-white px-2'>
+                <img src={data.img} width={86} height={64} alt="Img" />
+              </li>
+              <li className='rounded-nor shadow-md py-4 bg-white px-2'>
+                <img src={data.img} width={86} height={64} alt="Img" />
+              </li>
+              <li className='rounded-nor shadow-md py-4 bg-white px-2'>
+                <img src={data.img} width={86} height={64} alt="Img" />
+              </li>
+            </ul>
 
-          <div className='mr-10 bg-white rounded-nor pt-10 px-10 flex flex-col  shadow-md'>
-            <div className='flex justify-end'>
-              <span className='bg-olov text-right rounded-nor px-2 py-1 mb-10 text-white text-base'>{data.chegirma}</span>
+            <div className='sm:mr-10 bg-white rounded-nor pt-5 px-5 sm:pt-10 sm:px-10 flex flex-col   shadow-md'>
+              <div className='flex justify-end'>
+                <span className='bg-olov text-right rounded-nor px-2 py-1 mb-10 text-white text-base'>{data.chegirma}</span>
 
+              </div>
+              <img className='w-[404px] h-[136px] sm:w-[504px] sm:h-[496px]' src={data.img} alt="img" />
             </div>
-            <img src={data.img} width={504} height={496} alt="img" />
           </div>
 
-          <div className='max-w-[476px] w-full'>
+          <div className='sm:max-w-[476px] w-full'>
             <div className='flex justify-between'>
               <div>
                 <h3 className='text-2xl font-normal mb-1.5'>{data.price}</h3>
@@ -178,59 +180,6 @@ const Carddata = () => {
         </div>
 
       </div>
-      <section className='py-14'>
-        <div className="container">
-          <h2 className='text-4xl text-qorag mb-10 font-bold'>С этим товаров мокупают</h2>
-
-          {/* Card wrapper */}
-          <Swiper className=' py-2 px-2'
-            spaceBetween={40}
-            slidesPerView={4}
-            autoplay={{
-              "delay": 500,
-              "disableOnInteraction": false
-            }}
-            loop={true}
-
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-
-            {ranshedata.map((ranshedata) => {
-              return (
-                <SwiperSlide key={ranshedata.id} className='bg-white shadow-md rounded-nor pt-4'>
-                  <div className='relative'>
-                    <button onClick={() => qoshish(ranshedata.id)} className={`shadow-lg absolute right-2 p-2 ${like ? 'bg-red-500' : 'bg-slate-200/50'}
-                                 rounded-full duration-500`}>
-                      <img width={22} className='  p-0.5' height={22} src={Heart} alt="Heart icon" />
-                    </button>
-                    <img width={272} height={160} className='mx-auto' src={ranshedata.img} alt="Card img" />
-                  </div>
-                  <div className='p-2 space-y-2'>
-
-                    <div className='flex justify-between items-center mb-7'>
-                      <h3 className='font-bold text-lg text-qorag'>{ranshedata.price}</h3>
-                    </div>
-
-
-                    <p className='text-base  font-normal text-qorag'>
-                      {ranshedata.name}
-                    </p>
-
-                    {/* **************************** */}
-
-                    {/* ****************** */}
-
-                    <button className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
-
-                  </div>
-                </SwiperSlide>
-              )
-            })}
-
-          </Swiper>
-        </div>
-      </section>
 
 
       <section className='py-14'>
@@ -238,7 +187,7 @@ const Carddata = () => {
           <h2 className='text-qorag font-bold text-4xl mb-10'>Отзывы</h2>
           <hr />
 
-          <div className='py-5'> 
+          <div className='py-5'>
             <h3 className='font-bold text-qorag text-lg mb-4'>Ваша оценка</h3>
             <textarea cols="30" rows="7" className='border px-4 py-2 border-yellow-500/50 rounded-nor mb-4 w-full' placeholder='Отзыв'></textarea>
             <button className='p-2 text-[#FF6633] bg-[#FCD5BA]'>Отправить отзыв</button>

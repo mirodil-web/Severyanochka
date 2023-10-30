@@ -19,9 +19,9 @@ const Footer = () => {
             <footer className='bg-footerbg bg-[#f9f4e2] py-6'>
                 <div className="container ">
                     <div className=" flex justify-between mb-7">
-                        <a href="/">
-                            <img src={Logo} alt="Logo" />
-                        </a>
+                        <Link to="/">
+                            <img src={Logo} width={64} height={44} alt="Logo" />
+                        </Link>
                         <nav className='hidden md:block'>
                             <div className='lg:flex text-xs block'>
                                 <div className='mb-10 space-x-5 mr-5'>
@@ -38,14 +38,14 @@ const Footer = () => {
                             </div>
                         </nav>
                         
-                        <div className='flex items-start'>
-                            <ul className='grid grid-cols-2 lg:grid-cols-4 mr-5 '>
-                                <li className='mr-4 mb-4 lg:mr-0:mb-0'>
+                        <div className='grid grid-cols-1 items-start flex-col  md:grid-cols-2'>
+                            <ul className='grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 '>
+                                <li className=' mb-4 lg:mr-0:mb-0'>
                                     <a target='_blank' href="https://www.instagram.com/tolamirzayev_077/">
-                                        <img src={LogoIns} alt="Instagram logo" />
+                                        <img src={LogoIns} width={24} height={24} alt="Instagram logo" />
                                     </a>
                                 </li>
-                                <li className='mr-4 mb-4 lg:mr-0:mb-0'>
+                                <li className=' mb-4 lg:mr-0:mb-0'>
                                     <a target='_blank' href="https://m.vk.com/">
                                         <img src={LogoWk} alt="wk logo" />
                                     </a>
@@ -61,16 +61,16 @@ const Footer = () => {
                                     </a>
                                 </li>
                             </ul>
-                            <address className='font-normal not-italic flex flex-col '>
-                                <div className='flex items-center mb-7'>
+                            <div className='font-normal  not-italic flex flex-col '>
+                                <div className='flex items-center mb-0 md:mb-7'>
                                     <img className='mr-2' src={Telephone} alt="Phone" />
                                     <a className='cursor-pointer underline underline-offset-4' href='tel:+998887808882'>8 800 777 33 33</a>
                                 </div>
-                                <div className='flex items-center'>
+                                <div className='md:flex items-center hidden'>
                                     <span className='mr-2'>Дизайн</span>
                                     <img src={Zasoviskiy} alt="Dizayn" />
                                 </div>
-                            </address>
+                            </div>
                         </div>
                     </div>
 

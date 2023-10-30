@@ -23,7 +23,7 @@ const Cdetail = () => {
 
 
         <div>
-          <img className='rounded-nor h-80 w-full mb-2' src={data.img} alt="img" />
+          <img className='h-40  rounded-nor sm:h-80 w-full mb-2' src={data.img} alt="img" />
           <span className='text-xs font-normal text-[#8f8f8f]'>{data.span}</span>
           <h3 className='font-bold text-2xl mb-2.5'>{data.title}</h3>
           <p className='font-normal text-xl max-h-[120px] h-full  text-[#414141] mb-2.5'>{data.paragraf}</p>
