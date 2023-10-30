@@ -142,9 +142,6 @@ const Korzina = ({ korzina }) => {
         </svg>
 
         <h2>Empty-card 😳</h2>
-        <img src="../../public/assets/404.png" className='w-full' alt="" />
-
-
 
       </div>
     </div>

@@ -18,7 +18,7 @@ const Footer = () => {
         <>
             <footer className='bg-footerbg bg-[#f9f4e2] py-6'>
                 <div className="container ">
-                    <div className=" flex justify-between mb-7">
+                    <div className=" flex justify-between mb-7 md:mb-0">
                         <Link to="/">
                             <img src={Logo} width={64} height={44} alt="Logo" />
                         </Link>

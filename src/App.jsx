@@ -23,6 +23,7 @@ import Katalogresults from './components/Katalogresults';
 import Carddatanovinki from './pages/Carddatanovinki';
 import Cardranshedata from './pages/Cardranshedata';
 import Vseaksi from './pages/Vseaksi';
+import PageNotFound from './pages/PageNotFound';
 
 
 
@@ -81,6 +82,7 @@ const App = () => {
         <Route path='katalogresults/:id' element={<Katalogresults />} />
         <Route path='ranshedata/:id' element={<Cardranshedata />} />
         <Route path='vseaksi' element={<Vseaksi />} />
+        <Route path='*' element={<PageNotFound />} />
       </Route>
     )
   )
