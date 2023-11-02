@@ -15,7 +15,6 @@ const Main = () => {
           <Header />
           <Hero />
           <Aksiya />
-          <Novinki />
           <Ranshe />
           <Pridlojeniya />
           <Nashi />

@@ -18,9 +18,9 @@ const Katalog = () => {
           </span>
         </Breadcrumbs>
 
-        <h2 className='text-6xl font-bold mb-14 text-qorag'>Каталог</h2>
+        <h2 className='text-4xl minm:text-5xl md:text-6xl font-bold mb-14 text-qorag'>Каталог</h2>
 
-        <div className='grid grid-cols-2 minm:grid-cols-3  md:grid-cols-4 pb-20 gap-10'>
+        <div className='grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 pb-20 gap-10'>
 
             {/* card1 */}
           

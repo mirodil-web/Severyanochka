@@ -111,7 +111,7 @@ const Carddata = () => {
                 <span className='bg-olov text-right rounded-nor px-2 py-1 mb-10 text-white text-base'>{data.chegirma}</span>
 
               </div>
-              <img className='w-[404px] h-[136px] sm:w-[504px] sm:h-[496px]' src={data.img} alt="img" />
+              <img className='w-[404px] h-[136px] sm:w-[504px] sm:h-[296px]' src={data.img} alt="img" />
             </div>
           </div>
 

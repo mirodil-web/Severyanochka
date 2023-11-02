@@ -3,6 +3,7 @@ import { katalogdata } from '../store/data'
 import { Link, useParams } from 'react-router-dom'
 import { Breadcrumbs } from '@material-tailwind/react'
 import Heart from '../../public/assets/heart.png';
+import card from '@material-tailwind/react/theme/components/card';
 
 
 const Katalogresults = () => {
@@ -13,9 +14,19 @@ const Katalogresults = () => {
 
   const [like, setLike] = useState(false); // "like" o'zgaruvchisi va uning o'zgarish funksiyasi
 
+  const toggleLike = (id) => {
+    setLike(!like);
+    // "like" o'zgaruvchisini o'zgartirish
+    if (!like) {
+      addLike(id)
+    }
+    else {
+      removeLike(id)
+    }
+  };
 
   return (
-    <div>
+    <div className='bg-[#f9f4e2]'>
       <div className="container">
 
         <Breadcrumbs className='space-x-4 py-6'>
@@ -34,10 +45,12 @@ const Katalogresults = () => {
         </Breadcrumbs>
 
 
-        <ul className='grid grid-cols-4'>
-          <li>
-            <img src={data.cardimgr1} alt="img" />
+        <ul className='grid grid-cols-4 gap-5'>
+         
+          <li className='bg-white'>
+           {/* <Setlikekatalog data={data} /> */}
           </li>
+
         </ul>
 
       </div>

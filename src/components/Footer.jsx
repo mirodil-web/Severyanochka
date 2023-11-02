@@ -31,7 +31,7 @@ const Footer = () => {
                                 </div>
                                 <div className="space-x-5">
                         
-                                        <Link className='hover:text-[#f63]' to='/'>Статьи</Link>
+                                        <a href='#stati' className='hover:text-[#f63]' >Статьи</a>
                         
                                         <Link className='hover:text-[#f63]' to='/'>Политика обработки персональных данных</Link>
                                 </div>

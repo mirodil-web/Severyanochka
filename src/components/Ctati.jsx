@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Ctati = () => {
 
     return (
-        <section className='py-14 bg-[#FBF8EC] '>
+        <section id='stati' className='py-14 bg-[#FBF8EC] '>
             <div className="container">
 
                 {/* title */}

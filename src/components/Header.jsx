@@ -43,7 +43,7 @@ const Header = ({ cardLike, korzina }) => {
                                 {open && <div onClick={() => setOpen(false)} className='w-full flex justify-center items-center h-full fixed left-0 bottom-0 z-10 '>
                                 </div>
                                 }
-                                {open && <div className='app min-h-screen flex shadow fixed bg-[#FCD5BACC] bottom-0 left-0 h-full w-full justify-center items-center z-10'>
+                                {open && <div className='app min-h-screen sm: flex shadow fixed bg-[#FCD5BACC] bottom-0 left-0 h-full w-full justify-center items-center z-10'>
                                     <div className='bg-white rounded-nor text-center px-20 pt-16 pb-10   relative z-20'>
                                         <img src={Exit} onClick={() => setOpen(false)} className='cursor-pointer mb-8 absolute right-0 top-0' alt="Exit" />
                                         <h3 className='text-2xl font-bold mb-8'>Вход</h3>
@@ -107,8 +107,13 @@ const Header = ({ cardLike, korzina }) => {
                             <div className="">
                                 <img className='mb-5' width={152} height={32} src={Logo} alt="logo img" />
                             </div>
-                            <hr className='mb-10' />
-                            <div className="flex justify-between mb-10">
+                            <hr className='mb-5' />
+
+                            <Link onClick={() => resNav(false)} to='/katalog' className='hidden sm:block hover:shadow-xl px-5 py-1 shadow-Yashil shadow-sm rounded-nor hover:bg-Yashil/50  border'>
+                                <span className='text-base font-normal'> Каталог</span>
+                            </Link>
+
+                            <div className="flex justify-between mb-5">
                                 <Link onClick={() => setResNav(false)} className='mr-7' to='izbrozenoe'>
                                     <Badge count={`${cardLike.length}`}>
                                         <button className='flex flex-col justify-center items-center'>

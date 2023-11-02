@@ -8,13 +8,13 @@ import Pridlojeniya from '../components/Pridlojeniya'
 import Nashi from '../components/Nashi'
 import Ctati from '../components/Ctati'
 
-const Home = ({ addLike, removeLike, cardLike, qoshish, like, addKorzina }) => {
+const Home = ({ addLike, addLike2, addLike3, removeLike, removeLike2, removeLike3, cardLike, qoshish, like, addKorzina, addKorzina2, addKorzina3 }) => {
     return (
         <>
             <Hero />
-            <Aksiya addLike={addLike} addKorzina={addKorzina} cardLike={cardLike} removeLike={removeLike} qoshish={qoshish} like={like} />
-            <Novinki addLike={addLike} addKorzina={addKorzina} cardLike={cardLike} removeLike={removeLike} qoshish={qoshish} like={like} />
-            <Ranshe />
+            <Aksiya addLike={addLike} addKorzina={addKorzina}  removeLike={removeLike} qoshish={qoshish} like={like} />
+            <Novinki addLike2={addLike2} addKorzina2={addKorzina2}  removeLike2={removeLike2} qoshish={qoshish} like={like} />
+            <Ranshe addLike3={addLike3} addKorzina3={addKorzina3} removeLike3={removeLike3} />
             <Pridlojeniya />
             <Nashi />
             <Ctati />
