@@ -21,22 +21,60 @@ import pitaine from '../../public/assets/pitanie.png'
 import zatovariy from '../../public/assets/zatovariy.png'
 import baby from '../../public/assets/baby.png'
 import kolbasabek from '../../public/assets/kolbasaforkatalog.png'
+
+// katalog data img bred
+
+import Bread1 from '../../public/assets/breads/bread1.png'
+import Bread2 from '../../public/assets/breads/bread2.webp'
+import Bread3 from '../../public/assets/breads/bread3.png'
+import Bread4 from '../../public/assets/breads/bread4.png'
+import Bread5 from '../../public/assets/breads/bread5.png'
+import Bread6 from '../../public/assets/breads/bread6.png'
+import Bread7 from '../../public/assets/breads/bread7.png'
+import Bread8 from '../../public/assets/breads/bread8.png'
+
+// moloko sir yayso
 import moloko from '../../public/assets/moloko.jpg'
 import pishloq2 from '../../public/assets/pishloq2.png'
 import sut from '../../public/assets/sut.jpg'
 import pishloq from '../../public/assets/pishloq.png'
+import milk2 from '../../public/assets/milk2.png'
+import tuhum from '../../public/assets/tuhum.png'
+
+// fruicts
+import starfruict from '../../public/assets/starfruit.png'
+import kivi from '../../public/assets/kivi.jfif'
+import avakado from '../../public/assets/avakado.jpg'
+import kivi2 from '../../public/assets/Kiwi-fruits.jpg'
+import sugar from '../../public/assets/sugar.jpg'
+import branded from '../../public/assets/branded.jpg'
+import reddragon from '../../public/assets/reddragon.png'
+import lychexd from '../../public/assets/lyche.png'
+
+// muzlatilgan
+import baxroma from '../../public/assets/muzlatilgan/bahroma.png'
+import baliq from '../../public/assets/muzlatilgan/baliq.png'
+import balish from '../../public/assets/muzlatilgan/balish.png'
+import marojna from '../../public/assets/muzlatilgan/marojna.png'
+import vand from '../../public/assets/muzlatilgan/vand-food.png'
+import katlet from '../../public/assets/muzlatilgan/Котлеты.png'
+import vareniki from '../../public/assets/muzlatilgan/vareniki.png'
 
 
-// katalog data img
+// ichimliklar
 
-import Bread1 from '../../public/breads/bread1.png'
-import Bread2 from '../../public/breads/bread2.webp'
-import Bread3 from '../../public/breads/bread3.png'
-import Bread4 from '../../public/breads/bread4.png'
-import Bread5 from '../../public/breads/bread5.png'
-import Bread6 from '../../public/breads/bread6.png'
-import Bread7 from '../../public/breads/bread7.png'
-import Bread8 from '../../public/breads/bread8.png'
+import cola from '../../public/assets/ichimliklar/cola.png'
+import borjomi from '../../public/assets/ichimliklar/borjomi.png'
+import eon from '../../public/assets/ichimliklar/eon.png'
+import flash from '../../public/assets/ichimliklar/flaSH.png'
+import fanta from '../../public/assets/ichimliklar/fanta.png'
+import gira from '../../public/assets/ichimliklar/gira.png'
+import limonad from '../../public/assets/ichimliklar/limonad.png'
+import zelta from '../../public/assets/ichimliklar/zelta.png'
+
+
+
+
 
 
 
@@ -297,6 +335,14 @@ export const katalogdata = [
         id: 1,
         img: molakaosir,
         ptitle: "Молоко, сыр, яйцо",
+        cardimgr1: sut,
+        cardimgr2: pishloq,
+        cardimgr3: moloko,
+        cardimgr4: pishloq2,
+        cardimgr5: milk,
+        cardimgr6: milk2,
+        cardimgr7: tuhum,
+        cardimgr8: moloko,
     },
     {
         id: 2,
@@ -318,6 +364,14 @@ export const katalogdata = [
         img: fruict,
         ptitle: "Фрукты и овощи",
         price: '44,50 ₽',
+        cardimgr1: lychexd,
+        cardimgr2: reddragon,
+        cardimgr3: kivi,
+        cardimgr4: branded,
+        cardimgr5: starfruict,
+        cardimgr6: sugar,
+        cardimgr7: avakado,
+        cardimgr8: kivi2,
 
     },
     {
@@ -325,13 +379,29 @@ export const katalogdata = [
         img: productz,
         ptitle: "Замороженные продукты",
         price: '44,50 ₽',
-
+        cardimgr1: baxroma,
+        cardimgr2: balish,
+        cardimgr3: baliq,
+        cardimgr4: katlet,
+        cardimgr5: marojna,
+        cardimgr6: baxroma,
+        cardimgr7: vareniki,
+        cardimgr8: vand,
     },
     {
         id: 5,
         img: napitki,
         ptitle: "Напитки",
         price: '44,50 ₽',
+
+        cardimgr1: cola,
+        cardimgr2: limonad,
+        cardimgr3: fanta,
+        cardimgr4: flash,
+        cardimgr5: borjomi,
+        cardimgr6: eon,
+        cardimgr7: gira,
+        cardimgr8: zelta,
 
     },
     {

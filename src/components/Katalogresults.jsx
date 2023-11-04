@@ -48,15 +48,12 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
 
         <ul className='grid grid-cols-4 gap-5'>
          
-          <li className='bg-white pt-2'>
+          <li className='bg-white rounded-lg pt-2'>
             <div className='relative'>
 
-              <button onClick={() => toggleLike(data.id)} className={`duration-500 shadow-lg absolute right-2 p-2 ${like ? 'bg-red-400 p-2' : 'bg-slate-200/50'} rounded-full`}>
-                <img width={22} className='rounded-lg' height={22} src={Heart} alt="Heart icon" />
-              </button>
 
               {/* <Link to={`/ranshedata/${ranshedata.id}`}> */}
-              <img  className='mx-auto w-fuul' src={data.cardimgr1} alt="Card img" />
+              <img  className='mx-auto h-[177px]' src={data.cardimgr1} alt="Card img" />
 
               {/* </Link> */}
 
@@ -68,7 +65,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
               </div>
 
 
-              <p className='text-base  font-normal text-qorag'>
+              <p className='text-lg  font-medium text-qorag'>
                 {data.ptitle}
               </p>
 
@@ -76,22 +73,15 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
 
               {/* ****************** */}
 
-              <button onClick={() => addKorzina5(data.id)} className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
             </div>
           </li>
 
-          <li className='bg-white pt-2'>
+          <li className='bg-white rounded-lg pt-2'>
             <div className='relative'>
 
-              <button onClick={() => toggleLike(data.id)} className={`duration-500 shadow-lg absolute right-2 p-2 ${like ? 'bg-red-400 p-2' : 'bg-slate-200/50'} rounded-full`}>
-                <img width={22} className='rounded-lg' height={22} src={Heart} alt="Heart icon" />
-              </button>
 
-             
-              <img className='mx-auto w-fuul' src={data.cardimgr1} alt="Card img" />
-                    
-              
               {/* <Link to={`/ranshedata/${ranshedata.id}`}> */}
+              <img className='mx-auto h-[177px]' src={data.cardimgr2} alt="Card img" />
 
               {/* </Link> */}
 
@@ -103,7 +93,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
               </div>
 
 
-              <p className='text-base  font-normal text-qorag'>
+              <p className='text-lg  font-medium text-qorag'>
                 {data.ptitle}
               </p>
 
@@ -111,19 +101,15 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
 
               {/* ****************** */}
 
-              <button onClick={() => addKorzina5(data.id)} className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
             </div>
           </li>
 
-          <li className='bg-white pt-2'>
+          <li className='bg-white rounded-lg pt-2'>
             <div className='relative'>
 
-              <button onClick={() => toggleLike(data.id)} className={`duration-500 shadow-lg absolute right-2 p-2 ${like ? 'bg-red-400 p-2' : 'bg-slate-200/50'} rounded-full`}>
-                <img width={22} className='rounded-lg' height={22} src={Heart} alt="Heart icon" />
-              </button>
 
               {/* <Link to={`/ranshedata/${ranshedata.id}`}> */}
-              <img className='mx-auto w-fuul' src={data.cardimgr1} alt="Card img" />
+              <img className='mx-auto h-[177px]' src={data.cardimgr3} alt="Card img" />
 
               {/* </Link> */}
 
@@ -135,7 +121,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
               </div>
 
 
-              <p className='text-base  font-normal text-qorag'>
+              <p className='text-lg  font-medium text-qorag'>
                 {data.ptitle}
               </p>
 
@@ -143,19 +129,15 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
 
               {/* ****************** */}
 
-              <button onClick={() => addKorzina5(data.id)} className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
             </div>
           </li>
 
-          <li className='bg-white pt-2'>
+          <li className='bg-white rounded-lg pt-2'>
             <div className='relative'>
 
-              <button onClick={() => toggleLike(data.id)} className={`duration-500 shadow-lg absolute right-2 p-2 ${like ? 'bg-red-400 p-2' : 'bg-slate-200/50'} rounded-full`}>
-                <img width={22} className='rounded-lg' height={22} src={Heart} alt="Heart icon" />
-              </button>
 
               {/* <Link to={`/ranshedata/${ranshedata.id}`}> */}
-              <img className='mx-auto w-fuul' src={data.cardimgr1} alt="Card img" />
+              <img className='mx-auto h-[177px]' src={data.cardimgr4} alt="Card img" />
 
               {/* </Link> */}
 
@@ -167,7 +149,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
               </div>
 
 
-              <p className='text-base  font-normal text-qorag'>
+              <p className='text-lg  font-medium text-qorag'>
                 {data.ptitle}
               </p>
 
@@ -175,19 +157,15 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
 
               {/* ****************** */}
 
-              <button onClick={() => addKorzina5(data.id)} className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
             </div>
           </li>
 
-          <li className='bg-white pt-2'>
+          <li className='bg-white rounded-lg pt-2'>
             <div className='relative'>
 
-              <button onClick={() => toggleLike(data.id)} className={`duration-500 shadow-lg absolute right-2 p-2 ${like ? 'bg-red-400 p-2' : 'bg-slate-200/50'} rounded-full`}>
-                <img width={22} className='rounded-lg' height={22} src={Heart} alt="Heart icon" />
-              </button>
 
               {/* <Link to={`/ranshedata/${ranshedata.id}`}> */}
-              <img className='mx-auto w-fuul' src={data.cardimgr1} alt="Card img" />
+              <img className='mx-auto h-[177px]' src={data.cardimgr5} alt="Card img" />
 
               {/* </Link> */}
 
@@ -199,7 +177,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
               </div>
 
 
-              <p className='text-base  font-normal text-qorag'>
+              <p className='text-lg  font-medium text-qorag'>
                 {data.ptitle}
               </p>
 
@@ -207,19 +185,15 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
 
               {/* ****************** */}
 
-              <button onClick={() => addKorzina5(data.id)} className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
             </div>
           </li>
 
-          <li className='bg-white pt-2'>
+          <li className='bg-white rounded-lg pt-2'>
             <div className='relative'>
 
-              <button onClick={() => toggleLike(data.id)} className={`duration-500 shadow-lg absolute right-2 p-2 ${like ? 'bg-red-400 p-2' : 'bg-slate-200/50'} rounded-full`}>
-                <img width={22} className='rounded-lg' height={22} src={Heart} alt="Heart icon" />
-              </button>
 
               {/* <Link to={`/ranshedata/${ranshedata.id}`}> */}
-              <img className='mx-auto w-fuul' src={data.cardimgr1} alt="Card img" />
+              <img className='mx-auto h-[177px]' src={data.cardimgr6} alt="Card img" />
 
               {/* </Link> */}
 
@@ -231,7 +205,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
               </div>
 
 
-              <p className='text-base  font-normal text-qorag'>
+              <p className='text-lg  font-medium text-qorag'>
                 {data.ptitle}
               </p>
 
@@ -239,19 +213,15 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
 
               {/* ****************** */}
 
-              <button onClick={() => addKorzina5(data.id)} className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
             </div>
           </li>
 
-          <li className='bg-white pt-2'>
+           <li className='bg-white rounded-lg pt-2'>
             <div className='relative'>
 
-              <button onClick={() => toggleLike(data.id)} className={`duration-500 shadow-lg absolute right-2 p-2 ${like ? 'bg-red-400 p-2' : 'bg-slate-200/50'} rounded-full`}>
-                <img width={22} className='rounded-lg' height={22} src={Heart} alt="Heart icon" />
-              </button>
 
               {/* <Link to={`/ranshedata/${ranshedata.id}`}> */}
-              <img className='mx-auto w-fuul' src={data.cardimgr1} alt="Card img" />
+              <img className='mx-auto h-[177px]' src={data.cardimgr7} alt="Card img" />
 
               {/* </Link> */}
 
@@ -263,7 +233,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
               </div>
 
 
-              <p className='text-base  font-normal text-qorag'>
+              <p className='text-lg  font-medium text-qorag'>
                 {data.ptitle}
               </p>
 
@@ -271,19 +241,15 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
 
               {/* ****************** */}
 
-              <button onClick={() => addKorzina5(data.id)} className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
             </div>
           </li>
 
-          <li className='bg-white pt-2'>
+          <li className='bg-white rounded-lg pt-2'>
             <div className='relative'>
 
-              <button onClick={() => toggleLike(data.id)} className={`duration-500 shadow-lg absolute right-2 p-2 ${like ? 'bg-red-400 p-2' : 'bg-slate-200/50'} rounded-full`}>
-                <img width={22} className='rounded-lg' height={22} src={Heart} alt="Heart icon" />
-              </button>
 
               {/* <Link to={`/ranshedata/${ranshedata.id}`}> */}
-              <img className='mx-auto w-fuul' src={data.cardimgr1} alt="Card img" />
+              <img className='mx-auto h-[177px]' src={data.cardimgr8} alt="Card img" />
 
               {/* </Link> */}
 
@@ -295,7 +261,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
               </div>
 
 
-              <p className='text-base  font-normal text-qorag'>
+              <p className='text-lg  font-medium text-qorag'>
                 {data.ptitle}
               </p>
 
@@ -303,9 +269,9 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
 
               {/* ****************** */}
 
-              <button onClick={() => addKorzina5(data.id)} className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
             </div>
           </li>
+         
 
         </ul>
 

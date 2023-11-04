@@ -27,7 +27,6 @@ const App = () => {
 
   const [cardLike, setCardLike] = useState([])
   const [like, setLike] = useState(false)
-
   const [korzina, setKorzina] = useState([])
 
 
@@ -173,6 +172,34 @@ const App = () => {
     setKorzina([...tempArr]);
   };
 
+  // add 6
+  const removeLike6 = (i) => {
+    const updatedShop = cardLike.filter((e) => e.id !== i);
+    setCardLike(updatedShop);
+
+  };
+
+  const addLike6 = (i) => {
+    const found = cardLike.find((e) => e.id === i);
+    if (!found) {
+      const productToAdd = acsiyadata.find((e) => e.id === i);
+      setCardLike([...cardLike, { ...productToAdd }]);
+    }
+
+  };
+
+  const addKorzina6 = (i) => {
+    const found = korzina.find((e) => e.id === i);
+    if (!found) {
+      const productToAdd = acsiyadata.find((e) => e.id === i);
+      setKorzina([...korzina, { ...productToAdd }])
+    }
+    else (
+      alert('Этот товар уже выбран')
+    )
+
+  };
+
   
 
 
@@ -191,7 +218,7 @@ const routes = createBrowserRouter(
       <Route path='novinkidata/:id' element={<Carddatanovinki />} />
       <Route path='katalogresults/:id' element={<Katalogresults addKorzina5={addKorzina5} addLike5={addLike5} removeLike5={removeLike5} />} />
       <Route path='ranshedata/:id' element={<Cardranshedata />} />
-      <Route path='vseaksi' element={<Vseaksi />} />
+      <Route path='vseaksi' element={<Vseaksi  addLike6={addLike6} removeLike6={removeLike6} addKorzina6={addKorzina6} />} />
       <Route path='*' element={<PageNotFound />} />
     </Route>
   )

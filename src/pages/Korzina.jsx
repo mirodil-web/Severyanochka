@@ -39,23 +39,22 @@ const Korzina = ({ korzina, setKorzina, addCartPul  }) => {
           </Link>
         </Breadcrumbs>
 
-        <h2 className='text-6xl text-qorag font-bold mb-14'>Корзина</h2>
+        <h2 className='text-4xl minm:text-5xl md:text-6xl text-qorag font-bold mb-5 md:mb-14'>Корзина</h2>
 
-        <div className='flex mb-7' >
-          <button className='mr-10'>Выделить всё</button>
-          <button onClick={() => korzina(false)} className='text-red-600'>Удалить выбранные</button>
+        <div className={`flex mb-7 ${korzina.length === 0 ? 'hidden' : 'block'}`} >
+          <button onClick={() => Delete(korzina)} className='text-red-600 text-sm md:text-base'>Убрать все</button>
         </div>
 
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-20'>
+        <div  className={`flex flex-col justify-between lg:flex-row ${korzina.length === 0 ? 'hidden' : 'block'}`} >
 
-          <div className='col-span-2'>
-            <ul className='space-y-5'>
+          <div className='mb-10 '>
+            <ul className='space-y-5 mr-7'>
               {
                 korzina.map((card) => {
                   return (
-                    <li key={card.id} className='bg-white rounded-nor shadow-md flex justify-between p-2'>
+                    <li key={card.id} className='bg-white rounded-nor shadow-md w-full flex-col flex md:flex-row justify-between p-2'>
 
-                      <div className='flex'>
+                      <div className='flex mb-5 md:mb-0'>
                         <img width={80} height={60} className='shadow-lg py-3 px-2 mr-3' src={card.img} alt="img" />
                         <div className='flex flex-col justify-between'>
                           <h3 className='text-base'>{card.name}</h3>
@@ -63,7 +62,7 @@ const Korzina = ({ korzina, setKorzina, addCartPul  }) => {
                         </div>
                       </div>
 
-                      <div className='flex items-start'>
+                      <div className='flex items-center md:items-start justify-between'>
                         <div className='bg-Yashil rounded-nor text-white px-3 py-1 text-2xl flex items-center font-normal mr-7 space-x-5'>
 
                           {}
@@ -90,32 +89,25 @@ const Korzina = ({ korzina, setKorzina, addCartPul  }) => {
             </ul>
           </div>
 
-          <div className={` container ${korzina.length === 0 ? 'hidden' : 'block'}`}>
-            <h3 className='font-normal text-base mb-5'>Списать {narxi} ₽ </h3>
-            <p className='text-[#8F8F8F] mb-6'>На карте накоплено 200 ₽ </p>
-
-            <hr className='mb-6' />
-            <div className='flex justify-between mb-2.5'>
-              <span className='text-[#8F8F8F]'>3 товара</span> <span>1059,10  ₽ </span>
-            </div>
-            <div className='flex justify-between mb-6'>
-              <span className='text-[#8F8F8F]'>Скидка</span> <span className='text-[#F63] text-base font-bold'>-8,01  ₽  </span>
-            </div>
-
-            <hr className='mb-6' />
-
-            <div>
+          <div className={`w-full lg:w-[400px]  ${korzina.length === 0 ? 'hidden' : 'block'}`}>
+            <div className='w-full'>
               <div className='flex justify-between'>
-                <p className='text-[#8F8F8F]'>Итог</p>
-                <p className='font-bold text-2xl'>{narxi} ₽</p>
-
-                {/* 888888888888888888888888888888888********************** jami narxi ^ */}
+              <h3 className='font-normal text-base mb-5'>Количество карт    </h3>
+              <span className='font-bold'>{korzina.length}</span>
               </div>
-              <div className='flex  items-center justify-center p-2 mb-2'>
-                <svg className='mr-2' xmlns="http://www.w3.org/2000/svg" width="24" height="12" viewBox="0 0 24 12" fill="none">
-                  <path d="M23.1883 0.666611H0.811961C0.343143 0.666611 -0.0396916 1.05823 0.0033005 1.52051C0.494639 7.0113 5.67826 11.3333 12.0001 11.3333C18.322 11.3333 23.5056 7.01332 23.997 1.52051C24.0379 1.05823 23.6571 0.666611 23.1883 0.666611Z" fill="#70C05B" />
-                </svg>
-                <p className='text-sm text-[#70C05B]'>Вы получаете<strong> 10 бонусов</strong></p>
+              <hr className='mb-6' />
+              <div>
+                <div className='flex justify-between'>
+                  <p className='text-[#8F8F8F]'>Итог</p>
+                  <p className='font-bold text-2xl'>{narxi} ₽</p>
+                  {/* 888888888888888888888888888888888********************** jami narxi ^ */}
+                </div>
+                <div className='flex  items-center justify-center p-2 mb-2'>
+                  <svg className='mr-2' xmlns="http://www.w3.org/2000/svg" width="24" height="12" viewBox="0 0 24 12" fill="none">
+                    <path d="M23.1883 0.666611H0.811961C0.343143 0.666611 -0.0396916 1.05823 0.0033005 1.52051C0.494639 7.0113 5.67826 11.3333 12.0001 11.3333C18.322 11.3333 23.5056 7.01332 23.997 1.52051C24.0379 1.05823 23.6571 0.666611 23.1883 0.666611Z" fill="#70C05B" />
+                  </svg>
+                  <p className='text-sm text-[#70C05B]'>Вы получаете<strong> 10 бонусов</strong></p>
+                </div>
               </div>
             </div>
 

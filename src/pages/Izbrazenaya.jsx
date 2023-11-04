@@ -46,7 +46,7 @@ const Izbrazenaya = ({ cardLike, addKorzina4 }) => {
                   
 
                     {/* <Link to={`/ranshedata/${ranshedata.id}`}> */}
-                      <img  width={272} height={160} className='mx-auto' src={card.img} alt="Card img" />
+                      <img  width={272} height={160} className='mx-auto h-[177px]' src={card.img} alt="Card img" />
 
                     {/* </Link> */}
 
