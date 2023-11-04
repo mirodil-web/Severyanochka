@@ -32,7 +32,7 @@ const Setlike = ({ acsiyadata, addLike, removeLike, addKorzina } ) => {
                 </button>
                 
                 <Link to={`/carddata/${acsiyadata.id}`}>
-                    <img width={272} height={160} className='mx-auto' src={acsiyadata.img} alt="Card img" />
+                    <img width={272} height={110} className='mx-auto h-[177px]' src={acsiyadata.img} alt="Card img" />
                 </Link>
                 <span className='bg-olov rounded-nor p-1 absolute bottom-2 text-white'>
                     - 50%
@@ -41,7 +41,7 @@ const Setlike = ({ acsiyadata, addLike, removeLike, addKorzina } ) => {
             <div className='p-2 space-y-2'>
                 <div>
                     <div className='flex justify-between items-center'>
-                        <h3 className='font-bold text-lg text-qorag'>44,50 ₽</h3>
+                        <h3 className='font-bold text-lg text-qorag'>{acsiyadata.price} ₽</h3>
                         <h4 className='text-base font-normal text-blue-950'>50,50 ₽</h4>
                     </div>
                     <div className='flex justify-between items-center'>
@@ -52,7 +52,7 @@ const Setlike = ({ acsiyadata, addLike, removeLike, addKorzina } ) => {
                 <p className='text-base font-normal text-qorag'>
                     {acsiyadata.name}
                 </p>
-                <button onClick={() => addKorzina(acsiyadata.id)} className={`p-2 border border-Yashil rounded-nor text-Yashil w-full ${bgbutton ? 'bg-Yashil' : 'bg-white'}`}>{acsiyadata.button}</button>
+                <button onClick={() => addKorzina(acsiyadata.id)} className={`p-2 hover:bg-olov hover:text-white hover:border-none transition-delay-500 border border-Yashil rounded-nor text-Yashil w-full ${togglebtn ? 'bg-white' : 'bg-olov'}`}>{acsiyadata.button}</button>
             </div>
         </div>
     );

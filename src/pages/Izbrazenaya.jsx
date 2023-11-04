@@ -37,7 +37,7 @@ const Izbrazenaya = ({ cardLike, addKorzina4 }) => {
         <h2 className='text-4xl minm:text-5xl md:text-6xl font-bold mb-14 text-qorag'>Избраное</h2>
        
         
-        <ul className='grid grid-cols-4 gap-10'>
+        <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-10'>
           {
             cardLike.map((card) => {
               return (
@@ -53,8 +53,8 @@ const Izbrazenaya = ({ cardLike, addKorzina4 }) => {
                   </div>
                   <div className='p-2 space-y-2'>
 
-                    <div className='flex justify-between items-center mb-7'>
-                      <h3 className='font-bold text-lg text-qorag'>{card.price}</h3>
+                    <div className='flex justify-between items-center mb-2'>
+                      <h3 className='font-bold text-lg text-qorag'>{card.price} ₽</h3>
                     </div>
 
 

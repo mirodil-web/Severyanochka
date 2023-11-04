@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../language/language'
 import Logo from '../../public/assets/logox.svg'
 import LogoIns from '../../public/assets/instagram.svg'
 import LogoFacke from '../../public/assets/facebook.svg'

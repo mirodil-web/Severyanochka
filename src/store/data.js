@@ -21,6 +21,11 @@ import pitaine from '../../public/assets/pitanie.png'
 import zatovariy from '../../public/assets/zatovariy.png'
 import baby from '../../public/assets/baby.png'
 import kolbasabek from '../../public/assets/kolbasaforkatalog.png'
+import moloko from '../../public/assets/moloko.jpg'
+import pishloq2 from '../../public/assets/pishloq2.png'
+import sut from '../../public/assets/sut.jpg'
+import pishloq from '../../public/assets/pishloq.png'
+
 
 // katalog data img
 
@@ -41,43 +46,49 @@ export const acsiyadata = [
         id: 1,
         img: cardimg1,
         chegirma: '- 50%',
-        price: '44,50 ₽',
+        price: 44 ,
         price2: '50,50 ₽',
         name: 'Г/Ц Блинчики с мясом вес, Россия Блинчики',
         button: 'В корзину',
+        miqdor: 1,
     },
     {
         id: 2,
         img: milk,
         chegirma: ' - 50%',
-        price: '44,50 ₽',
+        price: 44,
         price2: '50,50 ₽',
         name: 'Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...',
         button: 'В корзину',
+        miqdor: 1,
+
     },
     {
         id: 3,
+        miqdor: 1,
         img: kolbasapaket,
         chegirma: ' - 50%',
-        price: '44,50 ₽',
+        price: 44,
         price2: '50,50 ₽',
         name: 'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
         button: 'В корзину',
     },
     {
         id: 4,
+        miqdor: 1,
         img: sosiska,
         chegirma: ' - 50%',
-        price: '44,50 ₽',
+        price: 44,
         price2: '50,50 ₽',
         name: 'Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...',
         button: 'В корзину',
     },
     {
         id: 5,
-        img: cardimg1,
+        miqdor: 1,
+        img: pishloq,
         chegirma: ' - 50%',
-        price: '44,50 ₽',
+        price: 44,
         price2: '50,50 ₽',
         name: 'Г/Ц Блинчики с мясом вес, Россия Блинчики',
         button: 'В корзину',
@@ -85,27 +96,30 @@ export const acsiyadata = [
     },
     {
         id: 6,
-        img: milk,
+        miqdor: 1,
+        img: pishloq2,
         chegirma: ' - 50%',
-        price: '44,50 ₽',
+        price: 44,
         price2: '50,50 ₽',
         name: 'Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...',
         button: 'В корзину'
     },
     {
         id: 7,
-        img: kolbasapaket,
+        miqdor: 1,
+        img: sut,
         chegirma: ' - 50%',
-        price: '44,50 ₽',
+        price: 44,
         price2: '50,50 ₽',
         name: 'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
         button: 'В корзину'
     },
     {
         id: 8,
-        img: sosiska,
+        miqdor: 1,
+        img: moloko,
         chegirma: ' - 50%',
-        price: '44,50 ₽',
+        price: 44,
         price2: '50,50 ₽',
         name: 'Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...',
         button: 'В корзину'
@@ -114,117 +128,141 @@ export const acsiyadata = [
 
 export const novinkidata = [
     {
-        id: 1,
-        img: kolbasa,
-        price: '599,99 ₽',
+        id: 9,
+        miqdor: 1,
+        img: moloko,
+        price: 599,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
+        
     },
     {
-        id: 2,
-        img: kolbasapaket,
-        price: '44,50 ₽',
+        id: 10,
+        miqdor: 1,
+        img: pishloq,
+        price: 44,
         name: 'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
         button: 'В корзину'
+        
     },
     {
-        id: 3,
+        id: 11,
+        miqdor: 1,
         img: sosiska,
-        price: '159,99 ₽',
+        price: 159,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
+        
     },
     {
-        id: 4,
+        id: 12,
+        miqdor: 1,
         img: milk,
-        price: '49,39 ₽',
+        price: 49,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
+        
     },
     {
-        id: 5,
-        img: kolbasa,
-        price: '599,99 ₽',
+        id: 13,
+        miqdor: 1,
+        img: pishloq2,
+        price: 599,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
+        
     },
     {
-        id: 6,
+        id: 14,
+        miqdor: 1,
         img: kolbasapaket,
-        price: '44,50 ₽',
+        price: 44,
         name: 'Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...',
         button: 'В корзину'
+        
     },
     {
-        id: 7,
+        id: 15,
+        miqdor: 1,
         img: sosiska,
-        price: '159,99 ₽',
+        price: 159,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
+        
     },
     {
-        id: 8,
-        img: milk,
-        price: '49,39 ₽',
+        id: 16,
+        miqdor: 1,
+        img: sut,
+        price: 49,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
+        
     },
 ]
 
 export const ranshedata = [
     {
-        id: 1,
+        id: 17,
+        miqdor: 1,
         img: kolbasapaket,
-        price: '77,99 ₽',
+        price: 77,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
-        id: 2,
+        id: 18,
+        miqdor: 1,
         img: sosiska,
-        price: '159,99 ₽',
+        price: 159,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
-        id: 3,
+        id: 19,
+        miqdor: 1,
         img: kolbasa,
-        price: '599,99 ₽',
+        price: 599,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
-        id: 4,
+        id: 20,
+        miqdor: 1,
         img: milk,
-        price: '49,39 ₽',
+        price: 49,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
-        id: 5,
+        id: 21,
+        miqdor: 1,
         img: kolbasapaket,
-        price: '77,99 ₽',
+        price: 77,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
-        id: 6,
+        id: 22,
+        miqdor: 1,
         img: sosiska,
-        price: '159,99 ₽',
+        price: 159,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
-        id: 7,
+        id: 23,
+        miqdor: 1,
         img: kolbasa,
-        price: '599,99 ₽',
+        price: 599,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },
     {
-        id: 8,
+        id: 24,
+        miqdor: 1,
         img: milk,
-        price: '49,39 ₽',
+        price: 49,
         name: 'Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»',
         button: 'В корзину'
     },

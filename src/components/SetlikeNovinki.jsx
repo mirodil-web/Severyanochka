@@ -32,14 +32,14 @@ const Setlike = ({ addLike2, removeLike2, addKorzina2,  novinkidata } ) => {
                     <img width={22} className=' rounded-lg ' height={22} src={Heart} alt="Heart icon" />
                 </button>
                 <Link to={`/novinkidata/${novinkidata.id}`}>
-                    <img width={272} height={160} className='mx-auto' src={novinkidata.img} alt="Card img" />
+                    <img width={272} height={160} className='mx-auto h-[177px]' src={novinkidata.img} alt="Card img" />
 
                 </Link>
             </div>
             <div className='p-2 space-y-2'>
 
                 <div className='flex justify-between items-center mb-7'>
-                    <h3 className='font-bold text-lg text-qorag'>{novinkidata.price}</h3>
+                    <h3 className='font-bold text-lg text-qorag'>{novinkidata.price} ₽</h3>
                 </div>
 
 
@@ -52,7 +52,7 @@ const Setlike = ({ addLike2, removeLike2, addKorzina2,  novinkidata } ) => {
 
                 {/* ****************** */}
 
-                <button onClick={()=>addKorzina2(novinkidata.id)} className='p-2 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
+                <button onClick={() => addKorzina2(novinkidata.id)} className='p-2 hover:bg-olov hover:text-white hover:border-none transition-delay-500 border border-Yashil rounded-nor text-Yashil w-full'>В корзину</button>
 
             </div>
         </div>

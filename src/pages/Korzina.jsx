@@ -1,13 +1,29 @@
 import { Breadcrumbs } from '@material-tailwind/react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Korzina = ({ korzina, setKorzina }) => {
+const Korzina = ({ korzina, setKorzina, addCartPul  }) => {
 
   const Delete = (i) => {
     const upDataShop = korzina.filter((up) => up.id != i)
     setKorzina(upDataShop)
   }
+
+  const [pul, setPul] = useState(true)
+  const [narxi, setNarxi] = useState(0)
+   const [miqdor, setMiqdor] = useState(1)
+
+  const CardNarxi = () => {
+    let pu = 0;
+    korzina.forEach((e) => {
+      pu += e.price * e.miqdor
+    });
+    setNarxi(pu)
+  };
+
+  useEffect(() => {
+    CardNarxi()
+  }, [korzina])
 
   return (
     <div className='pb-20 bg-[#f9f4e2]'>
@@ -43,21 +59,26 @@ const Korzina = ({ korzina, setKorzina }) => {
                         <img width={80} height={60} className='shadow-lg py-3 px-2 mr-3' src={card.img} alt="img" />
                         <div className='flex flex-col justify-between'>
                           <h3 className='text-base'>{card.name}</h3>
-                          <p className='text-xs'> <b> {card.price}</b>  за шт.</p>
+                          <p className='text-xs'> <b> {card.price} </b>  за шт.</p>
                         </div>
                       </div>
 
                       <div className='flex items-start'>
                         <div className='bg-Yashil rounded-nor text-white px-3 py-1 text-2xl flex items-center font-normal mr-7 space-x-5'>
-                          <button>-</button>
-                          <span className='text-sm'>1</span>
-                          <button>+</button>
+
+                          {}
+                          <button onClick={() => addCartPul(card, -1)} >-</button>
+                          <span className='text-sm'>{card.miqdor}</span>
+                          <button onClick={() => addCartPul(card, 1)}>+</button>
+
                         </div>
 
                         <div className='flex flex-col justify-between  items-center h-full'>
-                          <strong className='text-lg'>{card.price}</strong>
+                          <strong className='text-lg'>{card.price} ₽</strong>
 
-                          <button onClick={()=>Delete(card.id)}  className='bg-red-600 hover:bg-red-500 text-white text-sm rounded-nor px-2 py-1'>Delete</button>
+                          <button onClick={() => Delete(card.id)} className='bg-red-600 hover:bg-red-500 text-white text-sm rounded-nor px-2 py-1'>
+                            Delete
+                          </button>
 
                         </div>
 
@@ -70,7 +91,7 @@ const Korzina = ({ korzina, setKorzina }) => {
           </div>
 
           <div className={` container ${korzina.length === 0 ? 'hidden' : 'block'}`}>
-            <h3 className='font-normal text-base mb-5'>Списать 200 ₽ </h3>
+            <h3 className='font-normal text-base mb-5'>Списать {narxi} ₽ </h3>
             <p className='text-[#8F8F8F] mb-6'>На карте накоплено 200 ₽ </p>
 
             <hr className='mb-6' />
@@ -86,7 +107,7 @@ const Korzina = ({ korzina, setKorzina }) => {
             <div>
               <div className='flex justify-between'>
                 <p className='text-[#8F8F8F]'>Итог</p>
-                <p className='font-bold text-2xl'>1051,09 ₽ </p>
+                <p className='font-bold text-2xl'>{narxi} ₽</p>
 
                 {/* 888888888888888888888888888888888********************** jami narxi ^ */}
               </div>

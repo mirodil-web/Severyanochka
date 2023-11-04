@@ -44,15 +44,15 @@ const Header = ({ cardLike, korzina }) => {
                                 </div>
                                 }
                                 {open && <div className='app min-h-screen sm: flex shadow fixed bg-[#FCD5BACC] bottom-0 left-0 h-full w-full justify-center items-center z-10'>
-                                    <div className='bg-white rounded-nor text-center px-20 pt-16 pb-10   relative z-20'>
+                                    <div className='bg-white rounded-nor text-center px-5 sm:px-20 pt-7 sm:pt-16 pb-5 sm:pb-10   relative z-20'>
                                         <img src={Exit} onClick={() => setOpen(false)} className='cursor-pointer mb-8 absolute right-0 top-0' alt="Exit" />
-                                        <h3 className='text-2xl font-bold mb-8'>Вход</h3>
-                                        <div className='mb-8 text-left'>
+                                        <h3 className=' text-xl sm:text-2xl font-bold mb-8'>Вход</h3>
+                                        <div className='sm:mb-8 mb-5 text-left'>
                                             <label className='text-[#8F8F8F]' htmlFor="tel">Телефон</label><br />
-                                            <input placeholder='+7  (   )' id='tel' className='border border-[#70C05B] shadow-xl rounded-nor  p-3' type="tel" />
+                                            <input placeholder='+7  (   )' id='tel' className='border border-[#70C05B] shadow-xl rounded-nor  p-1.5  sm:p-3' type="tel" />
                                         </div>
                                         {/* bxod */}
-                                        <button className='mb-8 p-4 w-full text-[#FF6633] bg-[#FCD5BACC] rounded-nor'>Вход</button>
+                                        <button className='mb-8 p-2 sm:p-4 w-full text-[#FF6633] bg-[#FCD5BACC] rounded-nor'>Вход</button>
                                         {/* button block */}
                                         <div className='flex justify-between items-center'>
                                             <button className='rounded-nor text-xs border border-Yashil p-2 text-Yashil'>Регистрация</button>
@@ -109,13 +109,13 @@ const Header = ({ cardLike, korzina }) => {
                             </div>
                             <hr className='mb-5' />
 
-                            <Link onClick={() => resNav(false)} to='/katalog' className='hidden sm:block hover:shadow-xl px-5 py-1 shadow-Yashil shadow-sm rounded-nor hover:bg-Yashil/50  border'>
-                                <span className='text-base font-normal'> Каталог</span>
+                            <Link onClick={() => resNav(false)} to='/katalog' className='w-full hover:shadow-xl px-5 py-2 bg-Yashil shadow-cyan-600 shadow-sm rounded-nor hover:bg-Yashil/50  border mb-5 text-center'>
+                                <span className='text-base font-bold'> Каталог</span>
                             </Link>
 
                             <div className="flex justify-between mb-5">
                                 <Link onClick={() => setResNav(false)} className='mr-7' to='izbrozenoe'>
-                                    <Badge count={`${cardLike.length}`}>
+                                    <Badge  count={`${cardLike.length}`}>
                                         <button className='flex flex-col justify-center items-center'>
                                             <img className='mb-2' src={Heart} width={24} height={24} alt="heart img" />
                                             <span>Избранное</span>

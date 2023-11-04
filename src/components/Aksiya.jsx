@@ -16,13 +16,24 @@ const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
         }
     };
 
+    const toggleLike = (id) => {
+        setLike(!like);
+        // "like" o'zgaruvchisini o'zgartirish
+        if (!like) {
+            addLike(id)
+        }
+        else {
+            removeLike(id)
+        }
+    };
+
     return (
         <section className='pt-20 pb-14 bg-[#FBF8EC]'>
             <div className="container">
                 {/* title */}
                 <div className='flex justify-between items-center mb-10'>
                     <h2 className='md:text-4xl text-2xl  font-bold text-qorag'>Акции </h2>
-                    <Link to='vseaksi' className='p-2'>
+                    <Link to='/vseaksi ' className='p-2'>
                         Все покупки
                         <span className='ml-5'>≽</span>
                     </Link>
@@ -37,6 +48,7 @@ const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
                         disableOnInteraction: false,
                         
                     }}
+                    loop={true}
                     breakpoints={{
                         640: {
                             slidesPerView: 2,
@@ -51,9 +63,9 @@ const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
                             spaceBetween: 40,
                         },
                     }}
-                    loop={true}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    pagination={true}
+                    // onSlideChange={() => console.log('slide change')}
+                    // onSwiper={(swiper) => console.log(swiper)}
                 >
                     {acsiyadata.map((acsiyadata) => (
                         <SwiperSlide key={acsiyadata.id} className='bg-white shadow-md relative rounded-nor '>
