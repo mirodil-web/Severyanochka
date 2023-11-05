@@ -29,14 +29,16 @@ const Footer = () => {
                                     <Link className='hover:text-[#f63]' to="/vakansi">Вакансии</Link>
                                 </div>
                                 <div className="space-x-5">
-                        
-                                        <a href='#stati' className='hover:text-[#f63]' >Статьи</a>
-                        
-                                        <Link className='hover:text-[#f63]' to='/'>Политика обработки персональных данных</Link>
+
+                                    <a href='#stati' className='hover:text-[#f63]' >
+                                            Статьи
+                                    </a>
+
+                                    <Link className='hover:text-[#f63]' to='/'>Политика обработки персональных данных</Link>
                                 </div>
                             </div>
                         </nav>
-                        
+
                         <div className='grid grid-cols-1 items-start flex-col  md:grid-cols-2'>
                             <ul className='grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 '>
                                 <li className=' mb-4 lg:mr-0:mb-0'>

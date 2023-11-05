@@ -1,7 +1,6 @@
 import { Breadcrumbs } from '@material-tailwind/react'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import Paruc from '../../public/assets/parus.svg'
 
 
 const Kontakt = () => {

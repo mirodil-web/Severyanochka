@@ -60,7 +60,6 @@ import vand from '../../public/assets/muzlatilgan/vand-food.png'
 import katlet from '../../public/assets/muzlatilgan/Котлеты.png'
 import vareniki from '../../public/assets/muzlatilgan/vareniki.png'
 
-
 // ichimliklar
 
 import cola from '../../public/assets/ichimliklar/cola.png'
@@ -72,10 +71,60 @@ import gira from '../../public/assets/ichimliklar/gira.png'
 import limonad from '../../public/assets/ichimliklar/limonad.png'
 import zelta from '../../public/assets/ichimliklar/zelta.png'
 
+// izdeliya 
+import day from '../../public/assets/shirinliklar/7day.png'
+import candy from '../../public/assets/shirinliklar/candy.png'
+import chocoren from '../../public/assets/shirinliklar/chocoren.png'
+import crafers from '../../public/assets/shirinliklar/craferc.png'
+import ounona from '../../public/assets/shirinliklar/ounona.png'
+import popkorn from '../../public/assets/shirinliklar/popikorn.png'
+import snak from '../../public/assets/shirinliklar/snak.png'
+import tort from '../../public/assets/shirinliklar/tort.png'
 
+// chay kofe
+import barista from '../../public/assets/chaycofe/barista.jfif'
+import choycory from '../../public/assets/chaycofe/chicory.jpg'
+import dropcofe from '../../public/assets/chaycofe/dripcofe.png'
+import filtercofe from '../../public/assets/chaycofe/filtercofe.png'
+import kabatea from '../../public/assets/chaycofe/kabatea.png'
+import lipton from '../../public/assets/chaycofe/lipton.png'
+import oro from '../../public/assets/chaycofe/oro.png'
+import tesstea from '../../public/assets/chaycofe/tesstea.png'
 
+// bakaleya
+import kasha from '../../public/assets/bakaleya/kasha.jpg'
+import krahmal from '../../public/assets/bakaleya/kraxmal.jpg'
+import makaron from '../../public/assets/bakaleya/makaron.jpg'
+import maslo from '../../public/assets/bakaleya/maslo.jpg'
+import med from '../../public/assets/bakaleya/med.jpg'
+import muka from '../../public/assets/bakaleya/muka.jpg'
+import popkorn2 from '../../public/assets/bakaleya/popkorn.jpg'
+import uksus from '../../public/assets/bakaleya/uksus.jpg'
 
+// zatovariy
+import brid from '../../public/assets/zatovariy/brid.jpg'
+import grandof from '../../public/assets/zatovariy/grandof.jpg'
+import littleone from '../../public/assets/zatovariy/littleone.jpg'
+import littleone2 from '../../public/assets/zatovariy/littleone2.jpg'
+import littleone3 from '../../public/assets/zatovariy/littleone3.jpg'
+import omega from '../../public/assets/zatovariy/omega.jpg'
+import omega2 from '../../public/assets/zatovariy/omega2.jpg'
+import rio from '../../public/assets/zatovariy/rio2.jpg'
 
+// baby 
+import bondi from '../../public/assets/detski/bondi.jpg'
+import frutonana from '../../public/assets/detski/frutonana.jpg'
+import hipp from '../../public/assets/detski/hipp.jpg'
+import hippnight from '../../public/assets/detski/hippnight.jpg'
+import nanpro from '../../public/assets/detski/nanpro.jpg'
+import nutrilon from '../../public/assets/detski/nutrilon.jpg'
+import platinim from '../../public/assets/detski/platinim.jpg'
+
+// colbasa
+import kolbasax from '../../public/assets/kolbasa/kolbasa.jpg'
+import kolbasa2 from '../../public/assets/kolbasa/kolbasa2.jpg'
+import kolbasa3 from '../../public/assets/kolbasa/kolbasa3.jpg'
+import kolbasa4 from '../../public/assets/kolbasa/kalbasa4.jpg'
 
 
 
@@ -410,12 +459,29 @@ export const katalogdata = [
         ptitle: "Кондитерские изделия",
         price: '44,50 ₽',
 
+        cardimgr1: day,
+        cardimgr2: tort,
+        cardimgr3: snak,
+        cardimgr4: popkorn,
+        cardimgr5: popkorn2,
+        cardimgr6: candy,
+        cardimgr7: chocoren,
+        cardimgr8: crafers,
     },
     {
         id: 7,
         img: chaycofe,
         ptitle: "Чай, кофе",
         price: '44,50 ₽',
+
+        cardimgr1: filtercofe,
+        cardimgr2: dropcofe,
+        cardimgr3: tesstea,
+        cardimgr4: barista,
+        cardimgr5: oro,
+        cardimgr6: kabatea,
+        cardimgr7: lipton,
+        cardimgr8: choycory,
 
     },
     {
@@ -424,6 +490,14 @@ export const katalogdata = [
         ptitle: "Бакалея",
         price: '44,50 ₽',
 
+        cardimgr1: kasha,
+        cardimgr2: krahmal,
+        cardimgr3: makaron,
+        cardimgr4: muka,
+        cardimgr5: maslo,
+        cardimgr6: uksus,
+        cardimgr7: med,
+        cardimgr8: popkorn2,
     },
     {
         id: 9,
@@ -431,12 +505,29 @@ export const katalogdata = [
         ptitle: "Здоровое питание",
         price: '44,50 ₽',
 
+        cardimgr1: baliq,
+        cardimgr2: balish,
+        cardimgr3: reddragon,
+        cardimgr4: med,
+        cardimgr5: starfruict,
+        cardimgr6: marojna,
+        cardimgr7: bread,
+        cardimgr8: pishloq,
+
     },
     {
         id: 10,
         img: zatovariy,
         ptitle: "Зоотовары",
         price: '44,50 ₽',
+        cardimgr1: brid,
+        cardimgr2: littleone,
+        cardimgr3: littleone2,
+        cardimgr4: littleone3,
+        cardimgr5: rio,
+        cardimgr6: grandof,
+        cardimgr7: omega,
+        cardimgr8: omega2,
 
     },
     {
@@ -445,6 +536,16 @@ export const katalogdata = [
         ptitle: "Детское питание",
         price: '44,50 ₽',
 
+        cardimgr1: kasha,
+        cardimgr2: bondi,
+        cardimgr3: nanpro,
+        cardimgr4: nutrilon,
+        cardimgr5: hipp,
+        cardimgr6: hippnight,
+        cardimgr7: frutonana,
+        cardimgr8: platinim,
+
+
     },
     {
         id: 12,
@@ -452,8 +553,15 @@ export const katalogdata = [
         ptitle: "Мясо, птица, колбаса",
         price: '44,50 ₽',
 
+        cardimgr1: kolbasax,
+        cardimgr2: kolbasa2,
+        cardimgr3: kolbasa3,
+        cardimgr4: kolbasa4,
+        cardimgr5: kolbasa,
+        cardimgr6: kolbasapaket,
+        cardimgr7: kolbasax,
+        cardimgr8: sosiska,
     },
-
 
 ]
 
