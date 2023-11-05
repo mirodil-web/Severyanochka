@@ -25,6 +25,10 @@ const Korzina = ({ korzina, setKorzina, addCartPul  }) => {
     CardNarxi()
   }, [korzina])
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className='pb-20 bg-[#f9f4e2]'>
       

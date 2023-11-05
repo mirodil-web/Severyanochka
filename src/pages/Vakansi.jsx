@@ -1,10 +1,13 @@
 import { Breadcrumbs } from '@material-tailwind/react'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Phone from '../../public/assets/phone.svg'
 import { Link } from 'react-router-dom'
 
 const Vakansi = () => {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
 
     return (
         <section className='pb-20'>

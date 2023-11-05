@@ -1,5 +1,5 @@
 import { Breadcrumbs } from '@material-tailwind/react'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Heart from '../../public/assets/heart.png';
 
@@ -17,7 +17,9 @@ const Izbrazenaya = ({ cardLike, addKorzina4 }) => {
     }
   }
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   
 
   return (

@@ -1,12 +1,14 @@
 import { Breadcrumbs } from '@material-tailwind/react'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Paruc from '../../public/assets/parus.svg'
 
 
 const Kontakt = () => {
   const [activeTab, setActiveTab] = useState('tab1');
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div>
       <div className="container">

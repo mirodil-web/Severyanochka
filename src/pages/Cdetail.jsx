@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { ctataidata } from '../store/data'
 import { Breadcrumbs } from '@material-tailwind/react'
@@ -6,6 +6,11 @@ import { Breadcrumbs } from '@material-tailwind/react'
 const Cdetail = () => {
   const { id } = useParams()
   const data = ctataidata.find(i => i.id === parseInt(id))
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className='pb-14'>
 

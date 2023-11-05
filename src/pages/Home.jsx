@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // components
 import Hero from '../components/Hero'
 import Aksiya from '../components/Aksiya'
@@ -9,6 +9,11 @@ import Nashi from '../components/Nashi'
 import Ctati from '../components/Ctati'
 
 const Home = ({ addLike, addLike2, addLike3, removeLike, removeLike2, removeLike3, cardLike, qoshish, like, addKorzina, addKorzina2, addKorzina3 }) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <>
             <Hero />

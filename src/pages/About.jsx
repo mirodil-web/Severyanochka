@@ -1,5 +1,5 @@
 import { Breadcrumbs } from '@material-tailwind/react'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Odamlar from '../../public/assets/Vector.png'
 import Group from '../../public/assets/GroupDev.png'
@@ -7,6 +7,11 @@ import Logo from '../../public/assets/logox.svg'
 
 
 const About = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
   return (
       <section className=''>
           <div className="container">
