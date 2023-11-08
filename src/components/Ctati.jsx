@@ -10,12 +10,9 @@ const Ctati = () => {
             <div className="container">
 
                 {/* title */}
-                <div className='flex justify-between mb-10'>
+                <div className='flex justify-center mb-10'>
                     <h2 className='text-2xl md:text-4xl  font-bold text-qorag'>Статьи</h2>
-                    <button className='p-2'>
-                        Все cтатьи
-                        <span className='ml-5'>≽</span>
-                    </button>
+                    
                 </div>
 
                 <ul className='grid grid-cols-1 md:grid-cols-3 gap-10'>

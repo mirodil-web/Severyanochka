@@ -7,7 +7,7 @@ const Pridlojeniya = () => {
     return (
         <section className='py-14 bg-[#FBF8EC]'>
             <div className="container">
-                <h2 className='font-bold text-2xl md:text-4xl mb-10'>Специальные предложения</h2>
+                <h2 className='font-bold text-2xl md:text-4xl text-center mb-10'>Специальные предложения</h2>
 
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 grid-rows-[190px]'>
 
