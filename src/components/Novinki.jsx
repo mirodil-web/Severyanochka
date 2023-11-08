@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { novinkidata } from '../store/data'
 import SetLikeNovinki  from './SetlikeNovinki';
+import { Link } from 'react-router-dom';
 
 const Novinki = ({ addLike2, removeLike2, addKorzina2 }) => {
     const [like, setLike] = useState(false)
@@ -14,10 +15,10 @@ const Novinki = ({ addLike2, removeLike2, addKorzina2 }) => {
                         {/* title */}
                         <div className='flex justify-between mb-10'>
                             <h2 className='md:text-4xl text-2xl  font-bold text-qorag'>Новинки</h2>
-                            <button className='p-2'>
+                            {/* <Link className='p-2'>
                                 Все новинки
                                 <span className='ml-5'>≽</span>
-                            </button>
+                            </Link> */}
                         </div>
 
                         {/* Card wrapper */}

@@ -33,10 +33,10 @@ const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
                 {/* title */}
                 <div className='flex justify-between items-center mb-10'>
                     <h2 className='md:text-4xl text-2xl  font-bold text-qorag'>Акции </h2>
-                    <Link to='/vseaksi ' className='p-2'>
+                    {/* <Link to='/vseaksi ' className='p-2'>
                         Все покупки
                         <span className='ml-5'>≽</span>
-                    </Link>
+                    </Link> */}
                 </div>
                 
                 <Swiper
