@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { katalogdata } from '../store/data'
 import { Link, useParams } from 'react-router-dom'
 import { Breadcrumbs } from '@material-tailwind/react'
 import Heart from '../../public/assets/heart.png';
 
 
-const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
+const Katalogresults = ({ addKorzina5, removeLike5, addLike5 }) => {
 
   const { id } = useParams()
 
@@ -24,7 +24,10 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
     }
   };
 
-  console.log(data);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   return (
     <div className='bg-[#f9f4e2] pb-14'>
@@ -46,27 +49,27 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
         </Breadcrumbs>
 
 
-        <ul className='grid grid-cols-4 gap-5'>
-         
-          <li className='bg-white rounded-lg pt-2'>
+        <ul className='grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-5 '>
+
+          <li className='bg-white rounded-lg p-1.5'>
             <div className='relative'>
 
 
               {/* <Link to={`/ranshedata/${ranshedata.id}`}> */}
-              <img  className='mx-auto h-[177px]' src={data.cardimgr1} alt="Card img" />
+              <img className='mx-auto h-[177px]' src={data.cardimgr1} alt="Card img" />
 
               {/* </Link> */}
 
             </div>
             <div className='p-2 space-y-2'>
 
-              <div className='flex justify-between items-center mb-7'>
-                <h3 className='font-bold text-lg text-qorag'>{data.price}</h3>
+              <div className='flex justify-between items-center mb-3'>
+                <h3 className='font-bold text-lg text-qorag'>{data.price1} ₽</h3>
               </div>
 
 
               <p className='text-lg  font-medium text-qorag'>
-                {data.ptitle}
+                {data.ptitle1}
               </p>
 
               {/* **************************** */}
@@ -76,7 +79,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
           </li>
 
-          <li className='bg-white rounded-lg pt-2'>
+          <li className='bg-white rounded-lg p-1.5'>
             <div className='relative'>
 
 
@@ -88,13 +91,13 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
             <div className='p-2 space-y-2'>
 
-              <div className='flex justify-between items-center mb-7'>
-                <h3 className='font-bold text-lg text-qorag'>{data.price}</h3>
+              <div className='flex justify-between items-center mb-3'>
+                <h3 className='font-bold text-lg text-qorag'>{data.price2} ₽</h3>
               </div>
 
 
               <p className='text-lg  font-medium text-qorag'>
-                {data.ptitle}
+                {data.ptitle2}
               </p>
 
               {/* **************************** */}
@@ -104,7 +107,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
           </li>
 
-          <li className='bg-white rounded-lg pt-2'>
+          <li className='bg-white rounded-lg p-1.5'>
             <div className='relative'>
 
 
@@ -116,13 +119,13 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
             <div className='p-2 space-y-2'>
 
-              <div className='flex justify-between items-center mb-7'>
-                <h3 className='font-bold text-lg text-qorag'>{data.price}</h3>
+              <div className='flex justify-between items-center mb-3'>
+                <h3 className='font-bold text-lg text-qorag'>{data.price3} ₽</h3>
               </div>
 
 
               <p className='text-lg  font-medium text-qorag'>
-                {data.ptitle}
+                {data.ptitle3}
               </p>
 
               {/* **************************** */}
@@ -132,7 +135,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
           </li>
 
-          <li className='bg-white rounded-lg pt-2'>
+          <li className='bg-white rounded-lg p-1.5'>
             <div className='relative'>
 
 
@@ -144,13 +147,13 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
             <div className='p-2 space-y-2'>
 
-              <div className='flex justify-between items-center mb-7'>
-                <h3 className='font-bold text-lg text-qorag'>{data.price}</h3>
+              <div className='flex justify-between items-center mb-3'>
+                <h3 className='font-bold text-lg text-qorag'>{data.price4} ₽</h3>
               </div>
 
 
               <p className='text-lg  font-medium text-qorag'>
-                {data.ptitle}
+                {data.ptitle4}
               </p>
 
               {/* **************************** */}
@@ -160,7 +163,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
           </li>
 
-          <li className='bg-white rounded-lg pt-2'>
+          <li className='bg-white rounded-lg p-1.5'>
             <div className='relative'>
 
 
@@ -172,13 +175,13 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
             <div className='p-2 space-y-2'>
 
-              <div className='flex justify-between items-center mb-7'>
-                <h3 className='font-bold text-lg text-qorag'>{data.price}</h3>
+              <div className='flex justify-between items-center mb-3'>
+                <h3 className='font-bold text-lg text-qorag'>{data.price5} ₽</h3>
               </div>
 
 
               <p className='text-lg  font-medium text-qorag'>
-                {data.ptitle}
+                {data.ptitle5}
               </p>
 
               {/* **************************** */}
@@ -188,7 +191,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
           </li>
 
-          <li className='bg-white rounded-lg pt-2'>
+          <li className='bg-white rounded-lg p-1.5'>
             <div className='relative'>
 
 
@@ -200,13 +203,13 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
             <div className='p-2 space-y-2'>
 
-              <div className='flex justify-between items-center mb-7'>
-                <h3 className='font-bold text-lg text-qorag'>{data.price}</h3>
+              <div className='flex justify-between items-center mb-3'>
+                <h3 className='font-bold text-lg text-qorag'>{data.price6} ₽</h3>
               </div>
 
 
               <p className='text-lg  font-medium text-qorag'>
-                {data.ptitle}
+                {data.ptitle6}
               </p>
 
               {/* **************************** */}
@@ -216,7 +219,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
           </li>
 
-           <li className='bg-white rounded-lg pt-2'>
+          <li className='bg-white rounded-lg p-1.5'>
             <div className='relative'>
 
 
@@ -228,13 +231,13 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
             <div className='p-2 space-y-2'>
 
-              <div className='flex justify-between items-center mb-7'>
-                <h3 className='font-bold text-lg text-qorag'>{data.price}</h3>
+              <div className='flex justify-between items-center mb-3'>
+                <h3 className='font-bold text-lg text-qorag'>{data.price7} ₽</h3>
               </div>
 
 
               <p className='text-lg  font-medium text-qorag'>
-                {data.ptitle}
+                {data.ptitle7}
               </p>
 
               {/* **************************** */}
@@ -244,7 +247,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
           </li>
 
-          <li className='bg-white rounded-lg pt-2'>
+          <li className='bg-white rounded-lg p-1.5'>
             <div className='relative'>
 
 
@@ -256,13 +259,13 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
             </div>
             <div className='p-2 space-y-2'>
 
-              <div className='flex justify-between items-center mb-7'>
-                <h3 className='font-bold text-lg text-qorag'>{data.price}</h3>
+              <div className='flex justify-between items-center mb-3'>
+                <h3 className='font-bold text-lg text-qorag'>{data.price8} ₽</h3>
               </div>
 
 
               <p className='text-lg  font-medium text-qorag'>
-                {data.ptitle}
+                {data.ptitle8}
               </p>
 
               {/* **************************** */}
@@ -271,7 +274,7 @@ const Katalogresults = ({addKorzina5, removeLike5, addLike5}) => {
 
             </div>
           </li>
-         
+
 
         </ul>
 

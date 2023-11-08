@@ -383,7 +383,27 @@ export const katalogdata = [
     {
         id: 1,
         img: molakaosir,
+
+        price1: 40,
+        price2: 41, 
+        price3: 50, 
+        price4: 57, 
+        price5: 30, 
+        price6: 48, 
+        price7: 35, 
+        price8: 60, 
+
         ptitle: "Молоко, сыр, яйцо",
+
+        ptitle1: "Молоко сухое 150 г",
+        ptitle2: "Сыр высшего сорта",
+        ptitle3: "Молоко сладкое и вкусное",
+        ptitle4: "Классический сыр Хохланд",
+        ptitle5: "Молоко Простаквашино",
+        ptitle6: "Вилла молоко",
+        ptitle7: "Яйца самого высокого качества",
+        ptitle8: "Молоко сладкое и вкусное",
+
         cardimgr1: sut,
         cardimgr2: pishloq,
         cardimgr3: moloko,
@@ -396,8 +416,26 @@ export const katalogdata = [
     {
         id: 2,
         img: bread,
-        price: '44,50 ₽',
+
+        price1: 55,
+        price2: 44,
+        price3: 65,
+        price4: 40,
+        price5: 32,
+        price6: 40,
+        price7: 31,
+        price8: 29,
         ptitle: "Хлеб",
+
+        ptitle1: "Сладкий хлеб на закваске",
+        ptitle2: "Очень вкусный хлеб",
+        ptitle3: "Вкусный длиннозерный хлеб",
+        ptitle4: "Сладкая булочка с изюмом",
+        ptitle5: "Вкусный хлеб с орехами",
+        ptitle6: "Ширмайский хлеб",
+        ptitle7: "Болучка кругленькая и вкусная",
+        ptitle8: "Сладкая булочка",
+
         cardimgr1: Bread1,
         cardimgr2: Bread2,
         cardimgr3: Bread3,
@@ -411,8 +449,26 @@ export const katalogdata = [
     {
         id: 3,
         img: fruict,
+        price1: 49,
+        price2: 70,
+        price3: 63,
+        price4: 40,
+        price5: 54,
+        price6: 49,
+        price7: 36,
+        price8: 57,
+
         ptitle: "Фрукты и овощи",
-        price: '44,50 ₽',
+
+        ptitle1: "Личи – тропический фрукт",
+        ptitle2: "Красный дракон —  фрукт",
+        ptitle3: "Хорошо созревший киви",
+        ptitle4: "Фирменные фрукты",
+        ptitle5: "Звездчатый фрукт желтый",
+        ptitle6: "Сахар – тропический фрукт",
+        ptitle7: "Авокадо — тропический фрукт",
+        ptitle8: "Хорошо созревший киви",
+
         cardimgr1: lychexd,
         cardimgr2: reddragon,
         cardimgr3: kivi,
@@ -426,8 +482,26 @@ export const katalogdata = [
     {
         id: 4,
         img: productz,
+        price1: 40,
+        price2: 41,
+        price3: 50,
+        price4: 57,
+        price5: 30,
+        price6: 48,
+        price7: 35,
+        price8: 60, 
+
         ptitle: "Замороженные продукты",
-        price: '44,50 ₽',
+
+        ptitle1: "Бахрома",
+        ptitle2: "Подушка балыш ",
+        ptitle3: "Замороженная рыба",
+        ptitle4: "Вкусные котлеты",
+        ptitle5: "Молочное мороженое",
+        ptitle6: "Бахрома",
+        ptitle7: "Вареники о вишей",
+        ptitle8: "Ванд-фуд филе целлида",
+
         cardimgr1: baxroma,
         cardimgr2: balish,
         cardimgr3: baliq,
@@ -440,8 +514,26 @@ export const katalogdata = [
     {
         id: 5,
         img: napitki,
+        price1: 40,
+        price2: 41,
+        price3: 50,
+        price4: 57,
+        price5: 30,
+        price6: 48,
+        price7: 35,
+        price8: 60, 
+
         ptitle: "Напитки",
-        price: '44,50 ₽',
+
+
+        ptitle1: "Кока-Кола",
+        ptitle2: "Лимонад",
+        ptitle3: "Фанта ",
+        ptitle4: "Флаш энергии ",
+        ptitle5: "Боржоми",
+        ptitle6: "Эон ",
+        ptitle7: "Квас  ",
+        ptitle8: "Зелта",
 
         cardimgr1: cola,
         cardimgr2: limonad,
@@ -456,8 +548,26 @@ export const katalogdata = [
     {
         id: 6,
         img: izdeliya,
+        price1: 49,
+        price2: 70,
+        price3: 63,
+        price4: 40,
+        price5: 54,
+        price6: 49,
+        price7: 36,
+        price8: 57,
+
         ptitle: "Кондитерские изделия",
-        price: '44,50 ₽',
+
+
+        ptitle1: "7 дней патоки",
+        ptitle2: "Торт",
+        ptitle3: "Закуска",
+        ptitle4: "Попин Окин",
+        ptitle5: "Попкорн",
+        ptitle6: "Конфетные творения",
+        ptitle7: "Чокорен",
+        ptitle8: "Шоколад Crafers",
 
         cardimgr1: day,
         cardimgr2: tort,
@@ -471,8 +581,26 @@ export const katalogdata = [
     {
         id: 7,
         img: chaycofe,
+        price1: 40,
+        price2: 41,
+        price3: 50,
+        price4: 57,
+        price5: 30,
+        price6: 48,
+        price7: 35,
+        price8: 60, 
+
         ptitle: "Чай, кофе",
-        price: '44,50 ₽',
+
+
+        ptitle1: "Фильтрованный кофе",
+        ptitle2: "Капельный кофе",
+        ptitle3: "Тэсс чай",
+        ptitle4: "Бариста Кофе",
+        ptitle5: "Чай Оро",
+        ptitle6: "Каба чай",
+        ptitle7: "Липтон чай",
+        ptitle8: "Цикорий кофе",
 
         cardimgr1: filtercofe,
         cardimgr2: dropcofe,
@@ -487,8 +615,26 @@ export const katalogdata = [
     {
         id: 8,
         img: bakaleya,
+        price1: 55,
+        price2: 44,
+        price3: 65,
+        price4: 40,
+        price5: 32,
+        price6: 40,
+        price7: 31,
+        price8: 29,
+
         ptitle: "Бакалея",
-        price: '44,50 ₽',
+
+
+        ptitle1: "Доброе утро каша",
+        ptitle2: "Крахмал 400г",
+        ptitle3: "Макаронные изделия",
+        ptitle4: "Мука 500 г",
+        ptitle5: "Масло ",
+        ptitle6: "Уксус",
+        ptitle7: "Чистый мед",
+        ptitle8: "Попкорн",
 
         cardimgr1: kasha,
         cardimgr2: krahmal,
@@ -502,8 +648,26 @@ export const katalogdata = [
     {
         id: 9,
         img: pitaine,
+        price1: 49,
+        price2: 70,
+        price3: 63,
+        price4: 40,
+        price5: 54,
+        price6: 49,
+        price7: 36,
+        price8: 57,
+
         ptitle: "Здоровое питание",
-        price: '44,50 ₽',
+
+
+        ptitle1: "Замороженная рыба",
+        ptitle2: "Балиш",
+        ptitle3: "Красный драконий фрукт",
+        ptitle4: "Мед",
+        ptitle5: "Звездный фрукт",
+        ptitle6: "Мороженое",
+        ptitle7: "Хлеб",
+        ptitle8: "Качественный сыр",
 
         cardimgr1: baliq,
         cardimgr2: balish,
@@ -518,8 +682,27 @@ export const katalogdata = [
     {
         id: 10,
         img: zatovariy,
+        price1: 40,
+        price2: 41,
+        price3: 50,
+        price4: 57,
+        price5: 30,
+        price6: 48,
+        price7: 35,
+        price8: 60, 
+
         ptitle: "Зоотовары",
-        price: '44,50 ₽',
+
+
+        ptitle1: "Корм для кошек 'Брит'",
+        ptitle2: "Корм для грызунов Littleone",
+        ptitle3: "Корм для грызунов Littleone",
+        ptitle4: "Корм для грызунов Littleone",
+        ptitle5: "Корм для птиц Рио",
+        ptitle6: "Грандоф для коров",
+        ptitle7: "Омега для кошек",
+        ptitle8: "Омега для собак.",
+        
         cardimgr1: brid,
         cardimgr2: littleone,
         cardimgr3: littleone2,
@@ -533,8 +716,26 @@ export const katalogdata = [
     {
         id: 11,
         img: baby,
+        price1: 55,
+        price2: 44,
+        price3: 65,
+        price4: 40,
+        price5: 32,
+        price6: 40,
+        price7: 31,
+        price8: 29,
+
         ptitle: "Детское питание",
-        price: '44,50 ₽',
+
+
+        ptitle1: "Доброе утро каша",
+        ptitle2: "Бонди Печенье",
+        ptitle3: "Каша 'Нан про'",
+        ptitle4: "Капсулы «Нутрилон».",
+        ptitle5: "Тайники «Хиппа»",
+        ptitle6: " Тайники «Хиппа 2»",
+        ptitle7: "Каша 'Фрутонана'",
+        ptitle8: "«Платимум» кешью",
 
         cardimgr1: kasha,
         cardimgr2: bondi,
@@ -550,8 +751,26 @@ export const katalogdata = [
     {
         id: 12,
         img: kolbasabek,
+        price1: 55,
+        price2: 44,
+        price3: 65,
+        price4: 40,
+        price5: 32,
+        price6: 40,
+        price7: 31,
+        price8: 29,
+
         ptitle: "Мясо, птица, колбаса",
-        price: '44,50 ₽',
+
+
+        ptitle1: "Колбаса 'Мукулманиская'",
+        ptitle2: "Колбаса 'Мукулманиская 2'",
+        ptitle3: "Колбаса 'Оходничня'",
+        ptitle4: "Мяскома колбаса",
+        ptitle5: "«Оригинальная» колбаса",
+        ptitle6: "«Тосканская» колбаса",
+        ptitle7: "Колбаса 'Мукулманиская",
+        ptitle8: "Фасованная колбаса",
 
         cardimgr1: kolbasax,
         cardimgr2: kolbasa2,

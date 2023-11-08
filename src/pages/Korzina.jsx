@@ -27,7 +27,7 @@ const Korzina = ({ korzina, setKorzina, addCartPul  }) => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
 
   return (
     <div className='pb-20 bg-[#f9f4e2]'>
@@ -56,7 +56,7 @@ const Korzina = ({ korzina, setKorzina, addCartPul  }) => {
               {
                 korzina.map((card) => {
                   return (
-                    <li key={card.id} className='bg-white rounded-nor shadow-md w-full flex-col flex md:flex-row justify-between p-2'>
+                    <li key={card.id} className='bg-white rounded-nor shadow-md  flex-col max-w-4xl w-full flex md:flex-row justify-between p-2'>
 
                       <div className='flex mb-5 md:mb-0'>
                         <img width={80} height={60} className='shadow-lg py-3 px-2 mr-3' src={card.img} alt="img" />

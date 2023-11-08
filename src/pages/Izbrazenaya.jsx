@@ -19,7 +19,7 @@ const Izbrazenaya = ({ cardLike, addKorzina4 }) => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
   
 
   return (

@@ -12,7 +12,7 @@ const Home = ({ addLike, addLike2, addLike3, removeLike, removeLike2, removeLike
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    });
+    }, []);
 
     return (
         <>

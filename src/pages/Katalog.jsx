@@ -7,7 +7,7 @@ const Katalog = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
 
   return (
     <div className='bg-[#FBF8EC]'>

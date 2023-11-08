@@ -27,18 +27,18 @@ const Ctati = () => {
                                 <li key={ctataidata.id} className='shadow-xl hover:shadow-pinkx/90 rounded-nor relative'>
                                     <img className='w-full rounded-nor' src={ctataidata.img} alt="Inson" />
                                     <div className='p-2.5'>
-                                        <span className='text-xs font-normal text-[#8f8f8f]'>{ ctataidata.span}</span>
-                                        <h3 className='font-bold text-lg mb-2.5'>{ ctataidata.title}</h3>
-                                        <p className='font-normal max-h-[120px] h-full  text-[#414141] mb-2.5'>{ctataidata.paragraf}</p>
-                                        
-                                        <div className="flex items-end ">
-                                            <div>
+                                        <span className='text-xs font-normal text-[#8f8f8f]'>{ctataidata.span}</span>
+                                        <h3 className='font-bold text-lg mb-2.5'>{ctataidata.title}</h3>
+                                        <p className='font-normal max-h-[120px] h-full text-[#414141] mb-2.5'>{ctataidata.paragraf}</p>
+
+                                        <div className="flex items-end relativa py-3">
+                                            <div className='absolute bottom-3'>
                                                 <Link to={`cdetail/${ctataidata.id}`} className=' p-2 text-[#70C05B] rounded-nor bg-[#e5e5e5] hover:bg-Yashil hover:text-white duration-500'>Подробнее</Link>
                                             </div>
                                         </div>
-
                                     </div>
                                 </li>
+
                             )
                         })
                     }
