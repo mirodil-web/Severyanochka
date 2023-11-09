@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 
-const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
+const Aksiya = ({ addLike,  removeLike, addKorzina}) => {
     const [badge, setBadge] = useState();
     const like = (acsiyaId) => {
         
@@ -25,6 +25,14 @@ const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
         stylesheet.insertRule(".swiper-pagination-bullet-active { background: #000 !important;}", 0);
     }, []);
 
+    const [custom_swiper, set_swiper] = useState({});
+    const nextSlide = () => {
+        custom_swiper.slideNext();
+    };
+    const prevSlide = () => {
+        custom_swiper.slidePrev();
+    };
+
     
 
     return (
@@ -34,10 +42,10 @@ const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
                 <div className='flex justify-between items-center mb-10'>
                     <h2 className='md:text-4xl text-2xl  font-bold text-qorag'>Акции  </h2>
                     
-                    {/* <div class="bloc">
-                        <div class="swiper-button-next">→</div>
-                        <div class="swiper-button-prev swiper-button-disabled">←</div>
-                    </div> */}
+                    <div class="flex space-x-2 rounded-nor text-2xl ">
+                        <button onClick={prevSlide} class="hover:bg-Yashil hover:text-white px-2 rounded-nor duration-300">⇦</button>
+                        <button onClick={nextSlide} class="hover:bg-Yashil hover:text-white px-2 rounded-nor duration-300">⇨</button>
+                    </div>
                 </div>
                 
                 <Swiper
@@ -48,14 +56,12 @@ const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
                     navigation={
                         true
                     }
-                    scrollbar={{ draggable: true }}
                     className='py-2 px-2  grid grid-cols-4 mySwiper'
                     slidesPerView={1}
                     spaceBetween={40}
                     autoplay={{
                         delay: 2500,
-                        // disableOnInteraction: false,
-                        
+                        disableOnInteraction: false,
                     }}
                     loop={true}
                     breakpoints={{
@@ -72,6 +78,9 @@ const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
                             spaceBetween: 40,
                         },
                     }}
+                    onInit={(ev) => {
+                        set_swiper(ev);
+                    }}
                     // onSlideChange={() => console.log('slide change')}
                     // onSwiper={(swiper) => console.log(swiper)}
                 >
@@ -80,10 +89,6 @@ const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
                         <SwiperSlide key={acsiyadata.id} className='bg-white shadow-md relative rounded-nor block w-full h-full '>
                             <Setlike acsiyadata={acsiyadata} addKorzina={addKorzina} addLike={addLike} removeLike={removeLike} like={badge === acsiyadata.id} />
                             </SwiperSlide>
-                            
-                            <div className="swiper-button-next">Next</div>
-                            <div className="swiper-button-prev">Prev</div>
-
                         </div>
                         
                     ))}

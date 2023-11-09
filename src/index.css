@@ -24,17 +24,18 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
   box-shadow: -5px -5px 10px orange;
-  background-color: #70C05B;
+  background-color: rgb(187, 186, 186);
+  
 
 }
 
 body::-webkit-scrollbar-thumb {
   box-shadow: 0px 0px 10px rgb(7, 207, 247);
-  background-color: #f63;
-  border-radius: 200%;
+  background-color: rgba(255, 136, 0, 0.8);
+  border-radius: 200px;
 }
 
-/* .swiper-button-prev::after {
+.swiper-button-prev::after {
   display: none;
 }
 
@@ -48,7 +49,7 @@ body::-webkit-scrollbar-thumb {
 
 .swiper-button-next::before {
   display: none;
-} */
+}
 .swiper-button-prev {
   font-size: 30px;
 }

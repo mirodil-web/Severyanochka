@@ -2,11 +2,21 @@ import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ranshedata } from '../store/data'
 import SetlikeRanshe from './SetlikeRanshe';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
 
 
 const Ranshe = ({ addLike3, removeLike3, addKorzina3 }) => {
 
     const [like, setLike] = useState(false)
+
+    const [custom_swiper, set_swiper] = useState({});
+    const nextSlide = () => {
+        custom_swiper.slideNext();
+    };
+    const prevSlide = () => {
+        custom_swiper.slidePrev();
+    };
 
     
     return (
@@ -17,14 +27,22 @@ const Ranshe = ({ addLike3, removeLike3, addKorzina3 }) => {
                     {/* title */}
                     <div className='flex justify-between mb-10'>
                         <h2 className='text-2xl md:text-4xl  font-bold text-qorag'>Покупали раньше</h2>
-                        {/* <button className='p-2'>
-                            Все покупки
-                            <span className='ml-5'>≽</span>
-                        </button> */}
+                        <div class="flex space-x-2 rounded-nor text-2xl ">
+                            <button onClick={prevSlide} class="hover:bg-Yashil hover:text-white px-2 rounded-nor duration-300">⇦</button>
+                            <button onClick={nextSlide} class="hover:bg-Yashil hover:text-white px-2 rounded-nor duration-300">⇨</button>
+                        </div>
                     </div>
 
                     {/* Card wrapper */}
-                    <Swiper className=' py-2 px-2'
+                    <Swiper
+                        modules={[Navigation, Pagination, Scrollbar, A11y]}
+                        navigation={
+                            true
+                        }
+                        onInit={(ev) => {
+                            set_swiper(ev);
+                        }}
+                        className=' py-2 px-2'
                         spaceBetween={40}
                         slidesPerView={1}
                         autoplay={{
