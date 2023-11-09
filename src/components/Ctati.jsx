@@ -22,7 +22,7 @@ const Ctati = () => {
                             return (
 
                                 <li key={ctataidata.id} className='shadow-xl hover:shadow-pinkx/90 rounded-nor relative'>
-                                    <img className='w-full rounded-nor' src={ctataidata.img} alt="Inson" />
+                                    <img className='w-full rounded-nor h-32 sm:h-48 ' src={ctataidata.img} alt="Inson" />
                                     <div className='p-2.5'>
                                         <span className='text-xs font-normal text-[#8f8f8f]'>{ctataidata.span}</span>
                                         <h3 className='font-bold text-lg mb-2.5'>{ctataidata.title}</h3>

@@ -40,7 +40,7 @@ const Header = ({ cardLike, korzina }) => {
                                     <span className='text-base font-normal'> Каталог</span>
                                 </Link>
                                 {/* modal */}
-                                {open && <div onClick={() => setOpen(false)} className='w-full flex justify-center items-center h-full fixed left-0 bottom-0 z-10 '>
+                                {open && <div onClick={() => setOpen(false)} className='w-full flex justify-center items-center h-full fixed left-0 bottom-0 z-20 '>
                                 </div>
                                 }
                                 {open && <div className='app min-h-screen sm: flex shadow fixed bg-[#FCD5BACC] bottom-0 left-0 h-full w-full justify-center items-center z-10'>

@@ -93,7 +93,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <button onClick={() => window.scrollTo(0, 0)} className='bg-Yashil z-100 rounded-full text-white px-3 py-1 fixed text-xl right-7 bottom-7'>⇧</button>
+                <button onClick={() => window.scrollTo(0, 0)} className='bg-Yashil z-10 rounded-full text-white px-2 py-1 fixed text-xl right-7 bottom-7'>👆🏻</button>
             </footer>
 
         </>
