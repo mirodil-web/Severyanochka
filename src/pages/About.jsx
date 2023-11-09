@@ -37,18 +37,18 @@ const About = () => {
                   
               </div>
 
-              <ul className='grid grid-cols-1 md:grid-cols-3 justify-between space-y-5 md:space-y-0  py-14'>
-                  <li className='max-w-xs  w-full'>
+              <ul className='grid grid-cols-1 md:grid-cols-3 justify-center space-y-5 md:space-y-0  py-14'>
+                  <li className='max-w-xs text-center  w-full'>
                           <p className='text-xl font-normal mb-4'>Мы занимаемся <br /> розничной торговлей</p>
                           <h3 className="font-bold text-2xl">Более 20 лет.</h3>
                   </li>
-                  <hr />
-                  <li className='max-w-xs w-full'>
+                  <hr className='block md:hidden' />
+                  <li className='max-w-xs w-full text-center'>
                       <p className='text-xl font-normal mb-4'>Основная миссия компании</p>
                       <h3 className="font-bold text-2xl">Максимальное качество <br /> товаров и услуг по <br /> доступной цене.</h3>
                   </li>
-                  <hr />
-                  <li className='max-w-xs w-full'>
+                  <hr className='block md:hidden' />
+                  <li className='max-w-xs w-full text-center'>
                       <p className='text-xl font-normal mb-4'>Отличительная черта нашей сети</p>
                       <h3 className="font-bold text-2xl">Здоровая и полезная продукция <br /> местного производства внаших <br /> магазинах.</h3>
                   </li>

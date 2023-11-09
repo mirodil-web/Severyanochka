@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useRef,useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Link } from 'react-router-dom';
-import 'swiper/css';
 import { acsiyadata } from '../store/data';
 import Setlike from './Setlike';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+// Import Swiper styles
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 
 const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
     const [badge, setBadge] = useState();
@@ -16,36 +20,41 @@ const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
         }
     };
 
-    const toggleLike = (id) => {
-        setLike(!like);
-        // "like" o'zgaruvchisini o'zgartirish
-        if (!like) {
-            addLike(id)
-        }
-        else {
-            removeLike(id)
-        }
-    };
+    useEffect(() => {
+        const stylesheet = document.styleSheets[0];
+        stylesheet.insertRule(".swiper-pagination-bullet-active { background: #000 !important;}", 0);
+    }, []);
+
+    
 
     return (
         <section className='pt-20 pb-14 bg-[#FBF8EC]'>
             <div className="container">
                 {/* title */}
                 <div className='flex justify-between items-center mb-10'>
-                    <h2 className='md:text-4xl text-2xl  font-bold text-qorag'>Акции </h2>
-                    {/* <Link to='/vseaksi ' className='p-2'>
-                        Все покупки
-                        <span className='ml-5'>≽</span>
-                    </Link> */}
+                    <h2 className='md:text-4xl text-2xl  font-bold text-qorag'>Акции  </h2>
+                    
+                    {/* <div class="bloc">
+                        <div class="swiper-button-next">→</div>
+                        <div class="swiper-button-prev swiper-button-disabled">←</div>
+                    </div> */}
                 </div>
                 
                 <Swiper
-                    className='py-2 px-2 grid grid-cols-4 '
+                    // pagination={{
+                    //     type: 'progressbar',
+                    // }}
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    navigation={
+                        true
+                    }
+                    scrollbar={{ draggable: true }}
+                    className='py-2 px-2  grid grid-cols-4 mySwiper'
                     slidesPerView={1}
                     spaceBetween={40}
                     autoplay={{
-                        delay: 500,
-                        disableOnInteraction: false,
+                        delay: 2500,
+                        // disableOnInteraction: false,
                         
                     }}
                     loop={true}
@@ -63,14 +72,20 @@ const Aksiya = ({ addLike, cardLike, removeLike, addKorzina}) => {
                             spaceBetween: 40,
                         },
                     }}
-                    pagination={true}
                     // onSlideChange={() => console.log('slide change')}
                     // onSwiper={(swiper) => console.log(swiper)}
                 >
                     {acsiyadata.map((acsiyadata) => (
-                        <SwiperSlide key={acsiyadata.id} className='bg-white shadow-md relative rounded-nor '>
+                        <div>
+                        <SwiperSlide key={acsiyadata.id} className='bg-white shadow-md relative rounded-nor block w-full h-full '>
                             <Setlike acsiyadata={acsiyadata} addKorzina={addKorzina} addLike={addLike} removeLike={removeLike} like={badge === acsiyadata.id} />
-                        </SwiperSlide>
+                            </SwiperSlide>
+                            
+                            <div className="swiper-button-next">Next</div>
+                            <div className="swiper-button-prev">Prev</div>
+
+                        </div>
+                        
                     ))}
                 </Swiper>
             </div>

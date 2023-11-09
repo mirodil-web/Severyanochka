@@ -11,3 +11,62 @@
 *{
   scroll-behavior: smooth;
 }
+.swiper-pagination-bullet {
+  background-color: rgb(255, 0, 0)0, 234, 255);
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: -5px -5px 10px orange;
+  background-color: #70C05B;
+
+}
+
+body::-webkit-scrollbar-thumb {
+  box-shadow: 0px 0px 10px rgb(7, 207, 247);
+  background-color: #f63;
+  border-radius: 200%;
+}
+
+/* .swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-prev::before {
+  display: none;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-next::before {
+  display: none;
+} */
+.swiper-button-prev {
+  font-size: 30px;
+}
+.swiper-button-next {
+  font-size: 30px;
+}
+/* .block {
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  right: 90px;
+  color: #fff;
+  width: 100px;
+  height: 1px;
+  right: 0;
+} */
+
+.swiper-navigation-bullet {
+  background-color: red;
+  opacity: 1;
+}

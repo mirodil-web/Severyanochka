@@ -6,14 +6,13 @@ import LogoFacke from '../../public/assets/facebook.svg'
 import LogoOk from '../../public/assets/ok.svg'
 import LogoWk from '../../public/assets/vkontakte.svg'
 import Telephone from '../../public/assets/phone.svg'
-import Zasoviskiy from '../../public/assets/logo-zasovskiy-small-black.svg'
 
 const Footer = () => {
 
 
     return (
         <>
-            <footer className='bg-footerbg bg-[#f9f4e2] py-6'>
+            <footer className='bg-footerbg bg-[#f9f4e2] py-6 static w-full bottom-0'>
                 <div className="container ">
                     <div className=" flex justify-between mb-5 lg:mb-0">
                         <Link to="/">
@@ -94,7 +93,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <button onClick={() => window.scrollTo(0, 0)} className='bg-Yashil z-100 rounded-full text-white px-3 py-1 fixed text-xl right-2 bottom-10'>⇧</button>
+                <button onClick={() => window.scrollTo(0, 0)} className='bg-Yashil z-100 rounded-full text-white px-3 py-1 fixed text-xl right-7 bottom-7'>⇧</button>
             </footer>
 
         </>
