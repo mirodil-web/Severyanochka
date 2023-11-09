@@ -24,7 +24,7 @@ const Novinki = ({ addLike2, removeLike2, addKorzina2 }) => {
                         {/* title */}
                         <div className='flex justify-between mb-10'>
                             <h2 className='md:text-4xl text-2xl  font-bold text-qorag'>Новинки</h2>
-                            <div class="flex space-x-2 rounded-nor text-2xl ">
+                            <div class="flex space-x-2 items-center rounded-nor text-2xl ">
                                 <button onClick={prevSlide} class="hover:bg-Yashil hover:text-white py-0 px-2 rounded-nor duration-300">⇜</button>
                                 <button onClick={nextSlide} class="hover:bg-Yashil hover:text-white py-0 px-2 rounded-nor duration-300">⇝</button>
                             </div>

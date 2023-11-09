@@ -25,7 +25,7 @@ const Ranshe = ({ addLike3, removeLike3, addKorzina3 }) => {
                 <div className="container">
 
                     {/* title */}
-                    <div className='flex justify-between mb-10'>
+                    <div className='flex justify-between items-center mb-10'>
                         <h2 className='text-2xl md:text-4xl  font-bold text-qorag'>Покупали раньше</h2>
                         <div class="flex space-x-2 rounded-nor text-2xl ">
                             <button onClick={prevSlide} class="hover:bg-Yashil hover:text-white py-0 px-2 rounded-nor duration-300">⇽</button>
