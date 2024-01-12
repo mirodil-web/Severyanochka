@@ -1,4 +1,4 @@
-import React, { useRef,useState, useEffect } from 'react';
+import {useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { acsiyadata } from '../store/data';
 import Setlike from './Setlike';
@@ -32,7 +32,7 @@ const Aksiya = ({removeLike, addLike, addKorzina}) => {
     const prevSlide = () => {
         custom_swiper.slidePrev();
     };
-
+console.log(like);
     
 
     return (
@@ -42,9 +42,9 @@ const Aksiya = ({removeLike, addLike, addKorzina}) => {
                 <div className='flex justify-between items-center mb-10'>
                     <h2 className='md:text-4xl text-2xl  font-bold text-qorag'>Акции  </h2>
                     
-                    <div class="flex space-x-2 items-center rounded-nor text-2xl ">
-                        <button onClick={prevSlide} class="hover:bg-Yashil hover:text-white py-0 px-2  rounded-nor duration-300">⇠</button>
-                        <button onClick={nextSlide} class="hover:bg-Yashil hover:text-white py-0 px-2 rounded-nor duration-300">⇢</button>
+                    <div className="flex space-x-2 items-center rounded-nor text-2xl ">
+                        <button onClick={prevSlide} className="hover:bg-Yashil hover:text-white py-0 px-2  rounded-nor duration-300">⇠</button>
+                        <button onClick={nextSlide} className="hover:bg-Yashil hover:text-white py-0 px-2 rounded-nor duration-300">⇢</button>
                     </div>
                 </div>
                 
@@ -85,8 +85,8 @@ const Aksiya = ({removeLike, addLike, addKorzina}) => {
                     // onSwiper={(swiper) => console.log(swiper)}
                 >
                     {acsiyadata.map((acsiyadata) => (
-                        <div>
-                        <SwiperSlide key={acsiyadata.id} className='bg-white shadow-md relative rounded-nor block w-full h-full '>
+                        <div key={acsiyadata.id}>
+                        <SwiperSlide  className='bg-white shadow-md relative rounded-nor block w-full h-full '>
                             <Setlike acsiyadata={acsiyadata} addKorzina={addKorzina} addLike={addLike} removeLike={removeLike} like={badge === acsiyadata.id} />
                             </SwiperSlide>
                         </div>

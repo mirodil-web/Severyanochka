@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Heart from '../../public/assets/heart.png';
 import { Link } from 'react-router-dom';
 import { novinkidata } from '../store/data';
